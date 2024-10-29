@@ -15,6 +15,35 @@ export const InhouseFlight = () => {
     setActiveAccordion(activeAccordion === accordionId ? null : accordionId);
   };
 
+  const getAccordionImages = (key) => {
+    if (!activeAccordion) {
+      return deck;
+    }
+    switch (key) {
+      case "travel":
+        return flight;
+        break;
+      case "estate":
+        return deck;
+        break;
+      case "network":
+        return flight;
+        break;
+      case "operator":
+        return deck;
+        break;
+      case "agents":
+        return flight;
+        break;
+      case "events":
+        return deck;
+        break;
+      default:
+        return flight;
+        break;
+    }
+  };
+
   return (
     <section className="bg-gradient-bg  relative px-4 md:px-8 py-24">
       <div className="container mx-auto">
@@ -308,7 +337,7 @@ export const InhouseFlight = () => {
           <div className="lg:col-span-2">
             <Image
               className="w-full lg:w-4/5 lg:ml-auto"
-              src={deck}
+              src={getAccordionImages(activeAccordion)}
               alt="deck"
             />
           </div>
