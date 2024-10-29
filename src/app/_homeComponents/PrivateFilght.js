@@ -51,8 +51,8 @@ export const PrivateFlight = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-center pt-20">
-          <div className="text-center lg:col-span-3">
+        <div className="lg:grid lg:grid-cols-5 flex flex-col-reverse lg:gap-5 items-center pt-20">
+          <div className="text-center mt-10 lg:mt-0 lg:col-span-3">
             <Image className="w-full lg:w-4/5" src={research} alt="research" />
           </div>
           <div className="lg:col-span-2">

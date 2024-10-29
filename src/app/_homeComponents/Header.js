@@ -54,15 +54,15 @@ export const Header = () => {
       <header className="absolute  px-4 top-0 left-0 w-full z-40 xl:py-4">
         <nav>
           <div className="container mx-auto">
-            <div className="flex flex-wrap items-center justify-between mx-auto py-4">
-              <div className="flex gap-16 align-middle">
+            <div className="flex flex-wrap items-center justify-between  mx-auto py-4">
+              <div className="flex gap-2 md:gap-16 justify-between align-middle w-full md:w-auto">
                 <a
                   href="#"
                   className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                   <Image
                     src={logo}
-                    className="logo-header w-auto"
+                    className="logo-header h-6 lg:h-10 w-auto"
                     // width={10}
                     height={120}
                     alt="wsj"
@@ -72,7 +72,7 @@ export const Header = () => {
                   onClick={toggleMenu}
                   data-collapse-toggle="navbar-default"
                   type="button"
-                  className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  className="inline-flex items-center p-2 w-10 h-10 bg-white justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                   aria-controls="navbar-default"
                   aria-expanded={isOpen ? "true" : "false"}
                 >
@@ -94,8 +94,8 @@ export const Header = () => {
                   </svg>
                 </button>
                 <div
-                  className={`transition-all duration-300 ${
-                    isOpen ? "block" : "hidden"
+                  className={`transition-all bg-primary-color md:bg-transparent absolute md:relative top-20 md:top-0 duration-300 ${
+                    isOpen ? "block left-0" : "hidden"
                   } w-full md:block md:w-auto`}
                   id="navbar-default"
                 >
@@ -103,7 +103,7 @@ export const Header = () => {
                     <li>
                       <nav className="relative z-10 w-auto">
                         <div className="relative">
-                          <ul className="flex items-center justify-center flex-1 space-x-1 list-none text-neutral-700 group ">
+                          <ul className="flex items-center justify-start flex-1 space-x-1 list-none text-neutral-700 group ">
                             <li>
                               <button
                                 className={`inline-flex items-center justify-center border-0  py-2 px-3  lg:px-4 text-base font-medium transition-colors text-white rounded-md hover:text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none ${
@@ -148,16 +148,16 @@ export const Header = () => {
                             ref={navigationDropdownRef}
                             onMouseEnter={clearCloseTimeout}
                             onMouseLeave={handleMouseLeave}
-                            className={`absolute top-0 lg:left-20 pt-3 ease-out transform duration-100 ${
+                            className={`relative lg:absolute top-0 left-0 lg:left-20 pt-3 ease-out lg:transform duration-100 ${
                               navigationMenuOpen
                                 ? "opacity-100 scale-100"
                                 : "opacity-0 scale-90"
-                            } -translate-x-1/2 translate-y-11`}
+                            } lg:-translate-x-1/2 lg:translate-y-11`}
                           >
                             <div className="flex relative nav-platform justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
                               {navigationMenu === "learn-more" && (
-                                <div className="flex items-stretch  justify-center w-full p-6">
-                                  <div className="w-48">
+                                <div className="flex items-stretch  justify-center w-full flex-col lg:flex-row p-6">
+                                  <div className="w-full lg:w-48">
                                     <div className="col">
                                       <h6 className="text-sm uppercase text-title font-semibold pb-5 ">
                                         Overview
@@ -207,12 +207,12 @@ export const Header = () => {
                                       </ul>
                                     </div>
                                   </div>
-                                  <div className="min-w-96 f-full">
+                                  <div className="lg:min-w-96 w-full">
                                     <h6 className="text-sm uppercase text-title font-semibold pt-5 pb-5">
                                       use cases
                                     </h6>
                                     <ul className="font-medium grid gap-5 grid-cols-1 lg:grid-cols-2 md:p-0 md:bg-transparent">
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
@@ -227,7 +227,7 @@ export const Header = () => {
                                           Real Estate & Hospitality
                                         </a>
                                       </li>
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex items-start gap-2   w-full text-sm  hover:text-primary-color"
@@ -242,7 +242,7 @@ export const Header = () => {
                                           FBOs & MROs
                                         </a>
                                       </li>
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
@@ -257,7 +257,7 @@ export const Header = () => {
                                           Travel & Lifestyle
                                         </a>
                                       </li>
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex items-start gap-2  w-full text-sm  hover:text-primary-color"
@@ -272,7 +272,7 @@ export const Header = () => {
                                           Agents & Advisors
                                         </a>
                                       </li>
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
@@ -287,7 +287,7 @@ export const Header = () => {
                                           Networks & Marketplaces
                                         </a>
                                       </li>
-                                      <li className=" w-72">
+                                      <li className="w-full lg:w-72">
                                         <a
                                           href="#"
                                           className="flex items-start gap-2  w-full text-sm  hover:text-primary-color"
@@ -340,7 +340,7 @@ export const Header = () => {
                 </div>
               </div>
               <div>
-                <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
+                <button className="text-white hidden md:block text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
                   Get Started
                 </button>
               </div>

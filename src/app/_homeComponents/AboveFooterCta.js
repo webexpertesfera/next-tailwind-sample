@@ -12,12 +12,12 @@ export const AboveFooterCta = () => {
   return (
     <section className="relative z-20 mb-20">
       <div className="container mx-auto">
-        <div className="text-center mx-10 lg:mx-0 bg-second-color bg-cover bg-left-top text-white rounded-3xl relative">
-          <div className="grid grid-cols-4 gap-5">
-            <div className="relative bg-pattern-bg1 bg-contain bg-bottom bg-no-repeat">
-              {/* <Image src={pattern1} className="w-auto pl-5 h-64 object-contain object-top" alt="rectangle" /> */}
+        <div className="text-center  mx-10 lg:mx-0 bg-second-color bg-cover bg-left-top text-white rounded-3xl relative">
+          <div className="grid relative grid-cols-1 lg:grid-cols-4 gap-5 overflow-hidden">
+            <div className="relative md:bg-pattern-bg1 bg-contain bg-bottom bg-no-repeat">
+              <Image src={pattern1} className="w-32 h-52 md:hidden absolute top-28 -left-10 object-cover object-bottom" alt="rectangle" />
             </div>
-            <div className="col-span-2 py-10 md:py-16 xl:py-20">
+            <div className="lg:col-span-2 py-10 md:py-16 xl:py-20">
               <h2 className="text-3xl xl:text-5xl mb-10  md:m-auto font-semibold md:mb-10">
                 See what evoJets can do for your business
               </h2>
@@ -25,8 +25,8 @@ export const AboveFooterCta = () => {
                 Get Started
               </button>
             </div>
-            <div className="relative bg-pattern-bg bg-contain mt-6 bg-bottom bg-no-repeat">
-              {/* <Image src={pattern} className="w-auto  h-64 object-contain object-bottom" alt="rectangle" /> */}
+            <div className="relative md:bg-pattern-bg bg-contain mt-6 bg-bottom bg-no-repeat">
+              <Image src={pattern} className="w-32 h-52 md:hidden absolute bottom-0 -right-16 object-cover object-bottom" alt="rectangle" />
             </div>
           </div>
           <div className="absolute -bottom-5 -left-5 -z-10">

@@ -4,8 +4,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import flight from "../../../public/assets/flight.png";
+import estate from "../../../public/assets/estate.png";
 import deck from "../../../public/assets/deck.png";
-import arrow from "../../../public/assets/arw.png";
+import trip from "../../../public/assets/trip.png";
+import fbo from "../../../public/assets/fboo.png";
+import destination from "../../../public/assets/destination.png";
+import agent from "../../../public/assets/agent.png";
 import { useState } from "react";
 
 export const InhouseFlight = () => {
@@ -24,19 +28,19 @@ export const InhouseFlight = () => {
         return flight;
         break;
       case "estate":
-        return deck;
+        return estate;
         break;
       case "network":
-        return flight;
+        return trip;
         break;
       case "operator":
-        return deck;
+        return fbo;
         break;
       case "agents":
-        return flight;
+        return agent;
         break;
       case "events":
-        return deck;
+        return destination;
         break;
       default:
         return flight;
@@ -45,7 +49,7 @@ export const InhouseFlight = () => {
   };
 
   return (
-    <section className="bg-gradient-bg  relative px-4 md:px-8 py-24">
+    <section className="bg-gradient-bg py-12 relative px-4 md:px-8 lg:py-24">
       <div className="container mx-auto">
         <p className="uppercase text-xs text-primary-color border px-6 py-2 rounded-3xl border-second-border mb-5 w-max font-semibold">
           Platform
@@ -78,7 +82,7 @@ export const InhouseFlight = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl xl:text-5xl mb-24 pt-24 font-semibold">
+        <h2 className="text-3xl xl:text-5xl pt-12 mb-6 lg:mb-24 lg:pt-24 font-semibold">
           Who is Flight Deck for?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
