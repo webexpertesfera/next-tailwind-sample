@@ -11,12 +11,12 @@ import split from "../../../public/assets/split.png";
 
 export const WhyEvojets = () => {
   return (
-    <section className="bg-gradient-top  relative px-4 md:px-8 lg:py-24 py-12 pb-56">
+    <section className="bg-gradient-top  relative px-4 md:px-8 lg:pt-24 pt-12 pb-56">
       <div className="container mx-auto">
         <p className="uppercase text-center text-xs text-primary-color border px-6 py-2 rounded-3xl border-second-border mb-8 w-max m-auto font-semibold">
           Why evoJets
         </p>
-        <h2 className="text-3xl xl:text-5xl mb-14 font-semibold text-center lg:w-3/5 m-auto">
+        <h2 className="text-3xl xl:text-5xl mb-14 text-title-color font-semibold text-center lg:w-3/5 m-auto">
           The first and only private jet booking software with built-in
           fulfillment.
         </h2>
@@ -27,10 +27,10 @@ export const WhyEvojets = () => {
                 <Image className="" src={trusted} alt="trusted" />
               </div>
               <div className="grow pt-3">
-                <h4 className="text-xl lg:text-2xl font-medium mb-3">
+                <h4 className="text-xl  text-title-color lg:text-2xl font-medium mb-3">
                   Trusted charter partner
                 </h4>
-                <p className="text-base leading-normal mb-5 lg:w-4/5">
+                <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
                   Hand the transaction over to the professionals at evoJets to
                   manage the{" "}
                   <Link href="#" className="text-primary-color underline">
@@ -48,10 +48,10 @@ export const WhyEvojets = () => {
                 <Image className="" src={network} alt="trusted" />
               </div>
               <div className="grow pt-3">
-                <h4 className="text-xl lg:text-2xl font-medium mb-3">
+                <h4 className="text-xl text-title-color lg:text-2xl font-medium mb-3">
                   Network effects
                 </h4>
-                <p className="text-base leading-normal mb-5 lg:w-4/5">
+                <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
                   Leverage the
                   <Link href="#" className="text-primary-color underline">
                     aggregate demand
@@ -68,10 +68,10 @@ export const WhyEvojets = () => {
                 <Image className="" src={integration} alt="trusted" />
               </div>
               <div className="grow pt-3">
-                <h4 className="text-xl lg:text-2xl font-medium mb-3">
+                <h4 className="text-xl text-title-color lg:text-2xl font-medium mb-3">
                   Limitless integration options
                 </h4>
-                <p className="text-base leading-normal mb-5 lg:w-4/5">
+                <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
                   Deploy our APIs on your website, ERP, or mobile app however
                   you choose with our detailed
                   <Link href="#" className="text-primary-color underline">
@@ -88,10 +88,10 @@ export const WhyEvojets = () => {
                 <Image className="" src={power} alt="trusted" />
               </div>
               <div className="grow pt-3">
-                <h4 className="text-xl lg:text-2xl font-medium mb-3">
+                <h4 className="text-xl text-title-color lg:text-2xl font-medium mb-3">
                   Powerful, actionable data
                 </h4>
-                <p className="text-base leading-normal mb-5 lg:w-4/5">
+                <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
                   Gain real-time insights into customer behavior with
                   <Link href="#" className="text-primary-color underline">
                     dashboard analytics,
@@ -115,17 +115,17 @@ export const WhyEvojets = () => {
             <p className="uppercase text-xs text-primary-color border px-6 py-2 rounded-3xl border-second-border mb-8 w-max font-semibold">
               Engagement
             </p>
-            <h2 className="text-3xl xl:text-5xl mb-10 font-semibold">
+            <h2 className="text-3xl text-title-color xl:text-5xl mb-10 font-semibold">
               Custom account configurations
             </h2>
-            <p className="text-base leading-normal mb-5">
+            <p className="text-base text-para-color leading-normal mb-5">
               Flight Deck helps any organization navigate the private jet
               process and provide best-in-class charter services to customers
               and stakeholders. Whether your business uses private flights
               internally for employees or books flights on behalf of customers,
               Flight Deck can improve the process.
             </p>
-            <p className="text-base leading-normal font-medium">
+            <p className="text-base text-para-color leading-normal font-medium">
               <Link href="#" className="text-primary-color underline">
                 {" "}
                 Contact us

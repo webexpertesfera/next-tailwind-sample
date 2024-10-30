@@ -54,7 +54,7 @@ export const InhouseFlight = () => {
         <p className="uppercase text-xs text-primary-color border px-6 py-2 rounded-3xl border-second-border mb-5 w-max font-semibold">
           Platform
         </p>
-        <h2 className="text-3xl xl:text-5xl mb-10 font-semibold">
+        <h2 className="text-3xl text-title-color xl:text-5xl mb-10 font-semibold">
           Your instant, in-house flight department
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center">
@@ -62,18 +62,18 @@ export const InhouseFlight = () => {
             <Image className="w-full lg:w-4/5" src={flight} alt="flight" />
           </div>
           <div className="">
-            <h2 className="text-2xl lg:text-3xl font-semibold mb-8">
+            <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
               Flight Deck was created by{" "}
               <span className="text-primary-color"> evoJets, </span> and the
               experts at Evo manage all Flight Deck charter requests. 
             </h2>
-            <p className="text-base leading-normal mb-5">
+            <p className="text-base text-para-color leading-normal mb-5">
               After thousands of flights completed for hotels, travel planners,
               and EAs/PAs, we understand the risk and hassle these partners
               experience in booking flights for clients, employees, and
               stakeholders.
             </p>
-            <p className="text-base leading-normal">
+            <p className="text-base text-para-color leading-normal">
               Outfit your organization with the tools to harness its private
               flight demand with evoJets handling contracts, payments, and all
               the operational hassle.  Let your team focus on what they do best,
@@ -82,7 +82,7 @@ export const InhouseFlight = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl xl:text-5xl pt-12 mb-6 lg:mb-24 lg:pt-24 font-semibold">
+        <h2 className="text-3xl text-title-color xl:text-5xl pt-12 mb-6 lg:mb-24 lg:pt-24 font-semibold">
           Who is Flight Deck for?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -92,7 +92,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for   Travel & Lifestyle Management */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "travel"
                         ? "active bg-white text-primary-color "
                         : ""
@@ -118,8 +118,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "travel" && (
-                    <div className="accordion-content px-8 py-4 transition-transform  duration-300">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                      <p className="text-sm text-para-color md:text-base">
                         Empower your reps to research aircraft, view estimated
                         pricing, and send flight requests directly to evoJets,
                         saving hours of time.
@@ -132,6 +132,11 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mt-8 mb-4 lg:hidden"
+                        src={flight}
+                        alt="flight"
+                      />
                     </div>
                   )}
                 </div>
@@ -139,7 +144,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for Real Estate & Hospitality */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "estate"
                         ? "active bg-white border-b-0"
                         : ""
@@ -158,8 +163,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "estate" && (
-                    <div className="accordion-content px-8 py-4 transition-transform  duration-2000">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-2000">
+                      <p className="text-sm text-para-color md:text-base">
                         Unlock your property’s potential with a fully-branded
                         private flight booking engine built right into your
                         reservation system.
@@ -172,6 +177,11 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mb-4 mt-8 lg:hidden"
+                        src={estate}
+                        alt="estate"
+                      />
                     </div>
                   )}
                 </div>
@@ -179,7 +189,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for Networks & Marketplaces */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "network"
                         ? "active bg-white border-b-0"
                         : ""
@@ -198,8 +208,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "network" && (
-                    <div className="accordion-content px-8 py-4">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content  px-4 lg:px-8 py-4">
+                      <p className="text-sm text-para-color md:text-base">
                         Enhance your ecosystem with a streamlined solution for
                         flight pairing, sharing, and whole-aircraft charter for
                         your members.
@@ -212,6 +222,11 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mt-8 mb-4 lg:hidden"
+                        src={trip}
+                        alt="trip"
+                      />
                     </div>
                   )}
                 </div>
@@ -219,7 +234,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for FBOs & Operators */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "operator"
                         ? "active bg-white border-b-0"
                         : ""
@@ -238,8 +253,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "operator" && (
-                    <div className="accordion-content px-8 py-4">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content px-4 lg:px-8 py-4">
+                      <p className="text-sm text-para-color md:text-base">
                         Convert your website into a charter sales lead engine
                         with Flight Deck API, and leverage HQ for supplemental
                         lift and off-fleet requests.
@@ -252,6 +267,11 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mt-8 mb-4 lg:hidden"
+                        src={fbo}
+                        alt="fbo"
+                      />
                     </div>
                   )}
                 </div>
@@ -259,7 +279,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for Agents & Advisors */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "agents"
                         ? "active bg-white border-b-0"
                         : ""
@@ -278,8 +298,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "agents" && (
-                    <div className="accordion-content px-8 py-4">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content lg:px-8 px-4 py-4">
+                      <p className="text-sm text-para-color md:text-base">
                         Deepen your connection with clients by being their first
                         point of contact for private flight charters with
                         risk-free flight fulfillment by evoJets.
@@ -292,6 +312,11 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mt-8 mb-4 lg:hidden"
+                        src={agent}
+                        alt="agent"
+                      />
                     </div>
                   )}
                 </div>
@@ -299,7 +324,7 @@ export const InhouseFlight = () => {
                 {/* Accordion for Events & Destinations */}
                 <div className="accordion border-accbg border rounded-xl my-2">
                   <h3
-                    className={`text-prime-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
                       activeAccordion === "events"
                         ? "active bg-white border-b-0"
                         : ""
@@ -318,8 +343,8 @@ export const InhouseFlight = () => {
                     </div>
                   </h3>
                   {activeAccordion === "events" && (
-                    <div className="accordion-content px-8 py-4">
-                      <p className="text-sm md:text-base">
+                    <div className="accordion-content lg:px-8 px-4 py-4">
+                      <p className="text-sm text-para-color md:text-base">
                         Equip your website or mobile app with embedded private
                         flight booking to your event or destination - flights
                         fulfilled by evoJets.
@@ -332,13 +357,18 @@ export const InhouseFlight = () => {
                           Learn More
                         </button>
                       </div>
+                      <Image
+                        className="w-full mt-8 mb-4 lg:hidden"
+                        src={destination}
+                        alt="destination"
+                      />
                     </div>
                   )}
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2">
+          <div className="hidden lg:block lg:col-span-2">
             <Image
               className="w-full lg:w-4/5 lg:ml-auto"
               src={getAccordionImages(activeAccordion)}

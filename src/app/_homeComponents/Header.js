@@ -9,7 +9,6 @@ import agent from "../../../public/assets/agents.png";
 import travel from "../../../public/assets/travel.png";
 import shop from "../../../public/assets/shp.png";
 import event from "../../../public/assets/event.png";
-import HeaderMenu from "./HeaderMenu";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,7 +93,7 @@ export const Header = () => {
                   </svg>
                 </button>
                 <div
-                  className={`transition-all bg-primary-color md:bg-transparent absolute md:relative top-20 md:top-0 duration-300 ${
+                  className={`transition-all bg-second-color md:bg-transparent absolute md:relative top-20 md:top-0 duration-300 ${
                     isOpen ? "block left-0" : "hidden"
                   } w-full md:block md:w-auto`}
                   id="navbar-default"
@@ -106,7 +105,7 @@ export const Header = () => {
                           <ul className="flex items-center justify-start flex-1 space-x-1 list-none text-neutral-700 group ">
                             <li>
                               <button
-                                className={`inline-flex items-center justify-center border-0  py-2 px-3  lg:px-4 text-base font-medium transition-colors text-white rounded-md hover:text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none ${
+                                className={`inline-flex items-center justify-center border-0  py-2 px-3  lg:px-4  text-sm xl:text-base font-medium transition-colors text-white rounded-md hover:text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none ${
                                   navigationMenu === "learn-more"
                                     ? "bg-transparent"
                                     : "hover:bg-transparent"
@@ -148,13 +147,13 @@ export const Header = () => {
                             ref={navigationDropdownRef}
                             onMouseEnter={clearCloseTimeout}
                             onMouseLeave={handleMouseLeave}
-                            className={`relative lg:absolute top-0 left-0 lg:left-20 pt-3 ease-out lg:transform duration-100 ${
+                            className={`relative  nav-platform  after-menu lg:absolute top-0 left-0 lg:left-20 pt-3 ease-out lg:transform duration-100 ${
                               navigationMenuOpen
                                 ? "opacity-100 scale-100"
                                 : "opacity-0 scale-90"
                             } lg:-translate-x-1/2 lg:translate-y-11`}
                           >
-                            <div className="flex relative nav-platform justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
+                            <div className="flex relative bg-no-repeat lg:bg-menu-bg bg-contain bg-right-bottom justify-center w-auto h-auto overflow-hidden bg-second-color lg:bg-white lg:border rounded-md shadow-sm border-neutral-200/70">
                               {navigationMenu === "learn-more" && (
                                 <div className="flex items-stretch  justify-center w-full flex-col lg:flex-row p-6">
                                   <div className="w-full lg:w-48">
@@ -166,7 +165,7 @@ export const Header = () => {
                                         <li>
                                           <a
                                             href="#"
-                                            className="block pb-3 text-sm  hover:text-primary-color"
+                                            className="block pb-3 text-sm text-white lg:text-para-color hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             What we do
@@ -175,7 +174,7 @@ export const Header = () => {
                                         <li>
                                           <a
                                             href="#"
-                                            className="block pb-3  w-full text-sm  hover:text-primary-color"
+                                            className="block pb-3 text-white lg:text-para-color w-full text-sm  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             How we work
@@ -189,7 +188,7 @@ export const Header = () => {
                                         <li>
                                           <a
                                             href="#"
-                                            className="block pb-3 text-sm  hover:text-primary-color"
+                                            className="block pb-3 text-sm text-white lg:text-para-color  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             evoJets API
@@ -198,7 +197,7 @@ export const Header = () => {
                                         <li>
                                           <a
                                             href="#"
-                                            className="block pb-3  w-full text-sm  hover:text-primary-color"
+                                            className="block pb-3  w-full text-sm text-white lg:text-para-color  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             evoJets HQ
@@ -215,7 +214,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
+                                          className="flex w-full items-start gap-2 text-sm  text-white lg:text-para-color hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -230,7 +229,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex items-start gap-2   w-full text-sm  hover:text-primary-color"
+                                          className="flex items-start gap-2 text-white lg:text-para-color  w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -245,7 +244,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
+                                          className="flex w-full items-start gap-2 text-white lg:text-para-color text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -260,7 +259,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex items-start gap-2  w-full text-sm  hover:text-primary-color"
+                                          className="flex items-start gap-2 text-white lg:text-para-color w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -275,7 +274,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex w-full items-start gap-2 text-sm  hover:text-primary-color"
+                                          className="flex w-full items-start gap-2 text-white lg:text-para-color text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -290,7 +289,7 @@ export const Header = () => {
                                       <li className="w-full lg:w-72">
                                         <a
                                           href="#"
-                                          className="flex items-start gap-2  w-full text-sm  hover:text-primary-color"
+                                          className="flex items-start gap-2 text-white lg:text-para-color  w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
                                           <Image
@@ -335,6 +334,11 @@ export const Header = () => {
                       >
                         Contact
                       </a>
+                    </li>
+                    <li>
+                      <button className="text-white block lg:hidden text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
+                        Get Started
+                      </button>
                     </li>
                   </ul>
                 </div>

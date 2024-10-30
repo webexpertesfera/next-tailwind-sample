@@ -41,7 +41,7 @@ export const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <p className="text-sm mt-8 hidden md:block">
+              <p className="text-sm mt-8 text-para-color hidden md:block">
                 © 2023 Flight Deck{" "}
                 <Link className="ms-5" href="/">
                   Privacy Policy
@@ -52,7 +52,7 @@ export const Footer = () => {
               <h6 className="text-sm uppercase text-title font-semibold pb-5">
                 Company
               </h6>
-              <p className="text-base lg:w-4/5 mb-8">
+              <p className="text-base text-para-color lg:w-4/5 mb-8">
                 evoJets is a business aviation services and technology company
                 founded in Aspen, headquartered in NYC. We are building tools to
                 facilitate private air travel bookings for businesses of all
@@ -69,7 +69,7 @@ export const Footer = () => {
                   <h6 className="text-sm uppercase text-title font-semibold pb-5">
                     solutions
                   </h6>
-                  <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
+                  <ul className="font-medium text-para-color  bg-main-color md:p-0 md:bg-transparent">
                     <li>
                       <a
                         href="#"
@@ -93,7 +93,7 @@ export const Footer = () => {
                   <h6 className="text-sm uppercase text-title font-semibold pb-5 pt-5">
                     Overview
                   </h6>
-                  <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
+                  <ul className="font-medium text-para-color bg-main-color md:p-0 md:bg-transparent">
                     <li>
                       <a
                         href="#"
@@ -120,7 +120,7 @@ export const Footer = () => {
                   <h6 className="text-sm uppercase text-title font-semibold pb-5">
                     USE Cases
                   </h6>
-                  <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
+                  <ul className="font-medium  text-para-color md:p-0 md:bg-transparent">
                     <li>
                       <a
                         href="#"
