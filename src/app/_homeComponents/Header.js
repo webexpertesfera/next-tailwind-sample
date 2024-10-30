@@ -61,7 +61,7 @@ export const Header = () => {
                 >
                   <Image
                     src={logo}
-                    className="logo-header h-6 lg:h-10 w-auto"
+                    className="logo-header h-6 lg:h-8 w-auto"
                     // width={10}
                     height={120}
                     alt="wsj"
