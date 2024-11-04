@@ -1,49 +1,50 @@
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
-import banner from "../../../public/assets/offer.png";
+import React from "react";
 import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
-import { HowItWorks } from "../_DeckComponents/HowItWorks";
-import { ChooseIntegration } from "../_DeckComponents/ChooseIntegration";
-import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
-import { StackBooking } from "../_DeckComponents/StackBooking";
-import { BuiltFlight } from "../_DeckComponents/BuiltFlight";
+import real from "../../../public/assets/travels.png";
 
-export default function FlightDeckApi() {
+import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
+import { Engagements } from "../_TravelComponents/Engagements";
+import { Utilization } from "../_TravelComponents/Utilization";
+
+export default function TravelAndLifestyle() {
   return (
-    <main className="">
+    <div className="">
       <Header />
-      <section className="pt-32 lg:pt-36 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
+      <section className="pt-32 pb-24 lg:pt-36 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
             <div className="text-white lg:pr-10">
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
-                Offer private flight booking on your website or app
+                The tools of thetrade at the pushof a button
               </h2>
               <p className="text-base leading-normal">
-                Our combined API resources cover every aspect of the private
-                flight booking process. With a single integration, display
-                tailored pricing and aircraft options, collect user information,
-                field booking requests, and manage all requests on a centralized
-                platform.
+                Compiling quotes, comparing providers, and learning the nuances
+                of private jet charter is a time suck for your sales team and
+                account managers. With Flight Deck, your reps and your software
+                have instant access to pricing and research tools with a direct
+                connection to evoJets for fulfillment.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
                   Get Started
                 </button>
-                <button className="text-white  text-sm 2xl:text-base px-1 py-2 border-b border-border-color">
-                  Developer Docs
-                </button>
               </div>
             </div>
             <div className=" text-end">
-              <Image className="w-full lg:ml-auto" src={banner} alt="banner" />
+              <Image className="w-full lg:ml-auto" src={real} alt="banner" />
             </div>
           </div>
         </div>
         <div className="">
-          <Image src={shape} className="absolute top-0 left-1/2 h-8 lg:h-auto w-auto lg:left-2/3" alt="shape" />
+          <Image
+            src={shape}
+            className="absolute top-0 left-1/2 h-8 lg:h-auto w-auto lg:left-2/3"
+            alt="shape"
+          />
         </div>
         <div className="">
           <Image
@@ -53,14 +54,12 @@ export default function FlightDeckApi() {
           />
         </div>
       </section>
-      <HowItWorks />
-      <StackBooking />
-      <BuiltFlight />
-      <ChooseIntegration />
+      <Utilization />
+      <Engagements />
       <div className="-mt-36">
         <AboveFooterCta />
       </div>
       <Footer />
-    </main>
+    </div>
   );
 }

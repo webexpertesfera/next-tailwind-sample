@@ -18,7 +18,7 @@ export const AboveFooterCta = () => {
               <Image src={pattern1} className="w-32 h-52 md:hidden absolute top-28 -left-10 object-cover object-bottom" alt="rectangle" />
             </div>
             <div className="lg:col-span-2 py-10 md:py-16 xl:py-20">
-              <h2 className="text-3xl xl:text-5xl mb-10  md:m-auto font-semibold md:mb-10">
+              <h2 className="text-2xl md:text-4xl px-4 lg:px-0 xl:text-5xl mb-10  md:m-auto font-semibold md:mb-10">
                 See what evoJets can do for your business
               </h2>
               <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
@@ -33,7 +33,7 @@ export const AboveFooterCta = () => {
             <Image src={rect1} className="" alt="rectangle" />
           </div>
           <div className="absolute -right-5 -top-5 -z-10">
-            <Image src={rect} className="" alt="rectangle" />
+            <Image src={rect} className="md:h-72" alt="rectangle" />
           </div>
         </div>
       </div>

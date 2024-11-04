@@ -29,8 +29,10 @@ strong {
     --foreground: #ededed;
   }
 }
+
 .accordion h3.active {
   background: transparent;
+  color: #2447f2;
 }
 .active .acc-arrow {
   background: #2447f2 !important;
@@ -51,6 +53,27 @@ body {
 }
 .card-image:hover h3 {
   color: #2447f2;
+}
+.tb-btn.active i , .tb-btn:hover i {
+  color: #2447f2;
+}
+.tb-btn i {
+  display: inline-flex !important;
+}
+@media (min-width: 1100px) and (max-width: 1344px) {
+.min-h-api {
+  min-height: 64px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.min-h-col {
+  min-height: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 @media (max-width: 767px) {
   .nav-platform::after {

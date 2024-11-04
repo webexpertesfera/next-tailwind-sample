@@ -16,6 +16,7 @@ module.exports = {
           "built-bg": "url('../../public/assets/built-bg.png')",
           "pattern-bg1": "url('../../public/assets/pattern2.png')",
           "menu-bg": "url('../../public/assets/menubg.png')",
+          "hq-bg": "url('../../public/assets/hq-bg.png')",
           "gradient-bg": "linear-gradient(180deg, #F3F5FE 0%, #FFFFFF 65.11%)",
           "gradient-top": "linear-gradient(0deg, #F3F5FE 0%, #FFFFFF 82.06%)",
       },
