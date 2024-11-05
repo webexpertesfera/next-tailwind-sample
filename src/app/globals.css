@@ -37,6 +37,9 @@ strong {
 .active .acc-arrow {
   background: #2447f2 !important;
 }
+.accordion.faq h3.active {
+  color: #171717;
+}
 body {
   color: var(--foreground);
   background: var(--background);

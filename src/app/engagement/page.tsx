@@ -6,6 +6,7 @@ import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { WhatWeDo } from "../_ProcessComponents/WhatWeDo";
+import { Faq } from "../_ProcessComponents/Faq";
 
 export default function Engagement() {
   return (
@@ -50,9 +51,10 @@ export default function Engagement() {
         </div>
       </section>
       <WhatWeDo />
-      {/* <div className="-mt-36">
+      <Faq />
+      <div className="-mt-36">
         <AboveFooterCta />
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

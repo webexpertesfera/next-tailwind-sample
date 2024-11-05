@@ -22,7 +22,7 @@ export const WhatWeDo = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
           <div className="lg:pe-24">
-            <h2 className="text-3xl text-title-color lg:text-5xl font-semibold my-8">
+            <h2 className="text-3xl text-title-color lg:text-5xl mt-6 font-semibold lg:my-8">
               Our Process
             </h2>
           </div>
@@ -41,7 +41,7 @@ export const WhatWeDo = () => {
                   Onboarding
                 </h3>
                 {activeAccordion === "onboard" && (
-                  <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -64,7 +64,7 @@ export const WhatWeDo = () => {
                   Collaboration
                 </h3>
                 {activeAccordion === "collab" && (
-                  <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -88,7 +88,7 @@ export const WhatWeDo = () => {
                   Flight booking
                 </h3>
                 {activeAccordion === "booking" && (
-                  <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -112,7 +112,7 @@ export const WhatWeDo = () => {
                   Client interaction
                 </h3>
                 {activeAccordion === "interaction" && (
-                  <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -136,7 +136,7 @@ export const WhatWeDo = () => {
                  Legal
                 </h3>
                 {activeAccordion === "legal" && (
-                  <div className="accordion-content px-4 lg:px-8 py-4 transition-transform  duration-300">
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color font-medium md:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -150,7 +150,7 @@ export const WhatWeDo = () => {
           </div>
         </div>
       </div>
-      <Image className="absolute top-52 left-0 h-80 w-auto" src={map} alt="map" />
+      <Image className="hidden lg:block absolute top-52 left-0 h-96 w-auto" src={map} alt="map" />
     </section>
   );
 };
