@@ -12,7 +12,7 @@ export default function Engagement() {
   return (
     <div className="">
       <Header />
-      <section className="pt-32 pb-24 lg:py-52 relative px-4 bg-banner-bg bg-center bg-no-repeat b bg-cover">
+      <section className="pt-32 pb-24 lg:py-52 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
             <div className="text-white lg:pr-10 lg:col-span-3">
