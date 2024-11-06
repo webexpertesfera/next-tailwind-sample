@@ -26,7 +26,7 @@ export const WhatWeDo = () => {
               Our Process
             </h2>
           </div>
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2">   
             <div className="">
               {/* Accordion for  Onboard */}
               <div className="accordion border-accbg border rounded-xl my-2">
