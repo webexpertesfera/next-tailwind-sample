@@ -5,7 +5,7 @@ import React from "react";
 import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
-import { WhatWeDo } from "../_ProcessComponents/WhatWeDo";
+import { WhatWeOffer } from "../about-us/_aboutComponents/WhatWeOffer";
 import { Faq } from "../_ProcessComponents/Faq";
 
 export default function AboutUs() {
@@ -42,8 +42,7 @@ export default function AboutUs() {
           />
         </div>
       </section>
-      <WhatWeDo />
-      <Faq />
+     <WhatWeOffer />
       <div className="-mt-36">
         <AboveFooterCta />
       </div>
