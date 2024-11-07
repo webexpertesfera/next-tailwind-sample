@@ -12,7 +12,7 @@ import { Engagements } from "../_NetworkComponents/Engagements";
 
 export default function Networks() {
   return (
-    <div className="bg-darkmode bg-cover">
+    <div className="">
       <Header />
       <section className="pt-32 pb-24 lg:pt-36 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">
