@@ -12,7 +12,7 @@ import { Engagements } from "../_AgentComponents/Engagements";
 
 export default function AgentsAndAdvisors() {
   return (
-    <div className="">
+    <div className="bg-darkmode bg-cover">
       <Header />
       <section className="pt-32 pb-24 lg:pt-36 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">

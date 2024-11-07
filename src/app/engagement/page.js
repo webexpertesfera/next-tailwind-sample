@@ -10,7 +10,7 @@ import { Faq } from "../_ProcessComponents/Faq";
 
 export default function Engagement() {
   return (
-    <div className="">
+    <div className="bg-darkmode bg-cover">
       <Header />
       <section className="pt-32 pb-24 lg:py-52 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">

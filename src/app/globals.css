@@ -40,6 +40,9 @@ strong {
 .accordion.faq h3.active {
   color: #171717;
 }
+.html[native-dark-active] .bg-white {
+  background-color: #fff !important;
+}
 body {
   color: var(--foreground);
   background: var(--background);

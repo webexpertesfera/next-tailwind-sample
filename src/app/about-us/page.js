@@ -11,7 +11,7 @@ import { Featured } from "../about-us/_aboutComponents/Featured";
 
 export default function AboutUs() {
   return (
-    <div className="">
+    <div className="bg-darkmode bg-cover">
       <Header />
       <section className="pt-32 pb-24 lg:py-52 relative z-10 px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">

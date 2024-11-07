@@ -12,7 +12,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <>
-      <footer className="w-full z-40 py-10  px-4 xl:py-20">
+      <footer className="w-full bg-white z-40 py-10  px-4 xl:py-20">
         <div className="container mx-auto">
           <div className="grid gap-5 grid-cols-1 lg:grid-cols-10">
             <div className="lg:col-span-2">

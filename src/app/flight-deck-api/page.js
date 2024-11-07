@@ -12,7 +12,7 @@ import { BuiltFlight } from "../_DeckComponents/BuiltFlight";
 
 export default function FlightDeckApi() {
   return (
-    <main className="bg-lightbg bg-cover">
+    <main className="bg-darkmode bg-cover">
       <Header />
       <section className="pt-32 lg:pt-36 relative px-4 bg-banner-bg bg-bottom bg-no-repeat b bg-cover">
         <div className="container mx-auto">

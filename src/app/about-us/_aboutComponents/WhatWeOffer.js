@@ -11,9 +11,9 @@ export const WhatWeOffer = () => {
       <section className="pb-12 relative px-4 md:px-8  lg:py-24">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
-            <div className="">
+            <div className="lg:hidden ">
               <Image
-                className="w-11/12 -top-20 lg:hidden relative -right-5 lg:w-2/5 lg:absolute lg:-top-10 lg:right-0"
+                className="w-11/12 -top-20 relative -right-5 lg:w-2/5 lg:absolute lg:-top-10 lg:right-0"
                 src={flight}
                 alt="flight"
               />
@@ -44,6 +44,7 @@ export const WhatWeOffer = () => {
                 services on its website or app.
               </p>
             </div>
+            <div></div>
           </div>
         </div>
         <div className="">

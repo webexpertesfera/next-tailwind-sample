@@ -26,6 +26,7 @@ module.exports = {
         "title-color": "#070E2E",
         "bg-main": "#333B66",
         "border-hover": "#C8D0FA",
+        "bg-darkmode": "#fff",
         "para-color": "#1C2551",
         "second-color": "#080F33",
         "lightbg": "#f3f5fe",
