@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/about-us/page.js", "src/app/engagement/page.js", "src/app/events-and-destinations/page.js", "src/app/fbos-and-mros/page.js", "src/app/networks/page.js", "src/app/real-estate-and-hospitality/page.js", "src/app/travel-and-lifestyle/page.js", "src/app/agents-and-advisors/page.js"  ],
+, "src/app/about-us/page.js", "src/app/engagement/page.js", "src/app/events-and-destinations/page.js", "src/app/fbos-and-mros/page.js", "src/app/networks/page.js", "src/app/real-estate-and-hospitality/page.js", "src/app/travel-and-lifestyle/page.js", "src/app/agents-and-advisors/page.js", "src/app/flight-deck-hq/page.js"  ],
   "exclude": [
     "node_modules"
   ]

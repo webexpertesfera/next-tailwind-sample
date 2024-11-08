@@ -66,6 +66,19 @@ body {
 .tb-btn i {
   display: inline-flex !important;
 }
+i.text-icon {
+  font-size: 6px;
+  margin-right: 10px;
+}
+@media (min-width: 1278px) and (max-width: 1880px) {
+  .hq-banner-icn {
+    height: 974px;
+    margin: 0 auto;
+}
+section.dedicated {
+  padding-top: 0;
+}
+}
 @media (min-width: 1100px) and (max-width: 1344px) {
 .min-h-api {
   min-height: 64px;
