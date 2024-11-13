@@ -3,6 +3,7 @@ import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
 import banner from "../../../public/assets/do.png";
 import shape from "../../../public/assets/shape.png";
+import line from "../../../public/assets/ln.svg";
 import shape1 from "../../../public/assets/shape1.png";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { Aircraft } from "../what-we-do/_DoComponents/Aircraft";
@@ -59,19 +60,30 @@ export default function WhatWeDo() {
       </section>
       <div className="common pt-10 lg:pt-24">
         <div className="container mx-auto">
-        <p className="uppercase mx-4 text-xs text-primary-color border px-4 py-1 rounded-3xl border-second-border bg-lightbg mb-8   w-max font-semibold">
-        What we offer
-        </p>
-        <h2 className="text-3xl xl:text-5xl px-4 mb-8 text-title-color font-semibold">
-        Frictionless private flight fulfillment
-        </h2>
-            <Aircraft />
-            <AircraftSourcing />
+          <div className="relative ">
+          <div>
+            <Image
+                className=" absolute top-0 left-0 object-top"
+                src={line}
+                alt="line"
+              />
+            </div>
+            <div className="pl-10 lg:pl-16"> 
+              <p className="uppercase mx-4 text-xs text-primary-color border px-4 py-1 rounded-3xl border-second-border bg-lightbg mb-8   w-max font-semibold">
+                What we offer
+              </p>
+              <h2 className="text-3xl xl:text-5xl px-4 mb-8 text-title-color font-semibold">
+                Frictionless private flight fulfillment
+              </h2>
+              <Aircraft />
+              <AircraftSourcing />
+            </div>
+          </div>
         </div>
       </div>
       <div className="pt-20">
-      <AboveFooterCta />
-    </div>
+        <AboveFooterCta />
+      </div>
       <Footer />
     </div>
   );

@@ -10,8 +10,8 @@ import level from "../../../../public/assets/pay.png";
 
 export const Aircraft = () => {
   return (
-    <section className="relative dedicated px-4 md:px-8 pt-5  lg:pt-12 lg:pb-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5 lg:gap-10">
+    <section className="relative dedicated px-4 md:px-8 pt-5  lg:pt-12 lg:pb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5 lg:gap-6">
         <div>
           <div className="flex flex-row lg:flex-col gap-2">
             <div className="flex-none w-24 xl:w-30">

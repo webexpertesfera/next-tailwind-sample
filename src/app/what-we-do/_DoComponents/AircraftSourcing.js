@@ -11,8 +11,8 @@ import offload from "../../../../public/assets/offload.png";
 export const AircraftSourcing = () => {
   return (
     <div>
-      <section className="relative px-4 py-6">
-        <div className="bg-tab-bg rounded-3xl   p-4 lg:p-10">
+      <section className="relative px-4 py-4">
+        <div className="bg-tab-bg rounded-3xl   p-4 lg:p-8">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-5 lg:gap-10">
             <div className=" text-center mt-5 lg:mt-0">
               <Image src={user} className=" w-full" alt="sourcing" />
@@ -37,8 +37,8 @@ export const AircraftSourcing = () => {
           </div>
         </div>
       </section>
-      <section className="relative px-4 py-6">
-        <div className="bg-tab-bg rounded-3xl   p-4 lg:p-10">
+      <section className="relative px-4 py-4">
+        <div className="bg-tab-bg rounded-3xl   p-4 lg:p-8">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-5 lg:gap-10">
             <div className=" text-center mt-5 lg:mt-0">
               <Image src={account} className=" w-full" alt="sourcing" />
@@ -64,8 +64,8 @@ export const AircraftSourcing = () => {
           </div>
         </div>
       </section>
-      <section className="relative px-4 py-6">
-        <div className="bg-tab-bg rounded-3xl  p-4 lg:p-10">
+      <section className="relative px-4 py-4">
+        <div className="bg-tab-bg rounded-3xl  p-4 lg:p-8">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-5 lg:gap-10">
             <div className=" text-center mt-5 lg:mt-0">
               <Image src={expect} className=" w-full" alt="sourcing" />
@@ -91,8 +91,8 @@ export const AircraftSourcing = () => {
           </div>
         </div>
       </section>
-      <section className="relative px-4 py-6">
-        <div className="bg-tab-bg rounded-3xl  p-4 lg:p-10">
+      <section className="relative px-4 py-4">
+        <div className="bg-tab-bg rounded-3xl  p-4 lg:p-8">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-5 lg:gap-10">
             <div className=" text-center mt-5 lg:mt-0">
               <Image src={offload} className=" w-full" alt="offload" />
