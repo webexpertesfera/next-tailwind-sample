@@ -9,7 +9,7 @@ import pattern from "../../../public/assets/pattern1.png";
 import pattern1 from "../../../public/assets/pattern2.png";
 
 export const AboveFooterCta = () => {
-  return (
+  return (  
     <section className="relative z-20 mb-20">
       <div className="container mx-auto">
         <div className="text-center  mx-10 lg:mx-0 bg-second-color bg-cover bg-left-top text-white rounded-3xl relative">
