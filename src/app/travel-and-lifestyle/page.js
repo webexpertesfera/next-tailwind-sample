@@ -1,15 +1,19 @@
+"use client"
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
 import React from "react";
 import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
-import real from "../../../public/assets/travels.png";
+import real from "../../../public/assets/travel.json";
 
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { Engagements } from "../_TravelComponents/Engagements";
 import { Utilization } from "../_TravelComponents/Utilization";
 
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function TravelAndLifestyle() {
   return (
     <div className="bg-darkmode bg-cover">
@@ -35,7 +39,18 @@ export default function TravelAndLifestyle() {
               </div>
             </div>
             <div className=" text-end">
-              <Image className="w-full lg:ml-auto" src={real} alt="banner" />
+            <div className="lottie-chart">
+                <Lottie
+                  animationData={real}
+                  loop={true}
+                  className="w-full lg:ml-auto"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
+          
             </div>
           </div>
         </div>

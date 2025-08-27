@@ -1,14 +1,18 @@
+"use client"
 import Image from "next/image";
+
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
-import banner from "../../../public/assets/hq-banner.png";
+import banner from "../../../public/assets/flightdeck-hq.json";
 import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { Dedicated } from "../flight-deck-hq/_HqComponents/Dedicated";
 import { TrackManage } from "../flight-deck-hq/_HqComponents/TrackManage";
 import { ResearchFlight } from "../flight-deck-hq/_HqComponents/ResearchFlight";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function FlightDeckHq() {
   return (
     <main className="bg-darkmode bg-cover">
@@ -37,11 +41,17 @@ export default function FlightDeckHq() {
           </div>
         </div>
         <div className="relative lg:absolute -bottom-20 left-0 right-0 m-auto lg:top-64">
-          <Image
-            className="w-full hq-banner-icn lg:ml-auto object-contain h-auto"
-            src={banner}
-            alt="banner"
-          />
+          <div className="lottie-chart">
+            <Lottie
+              animationData={banner}
+              loop={true}
+              className="w-full hq-banner-icn lg:ml-auto object-contain h-auto"
+              autoplay={true}
+              rendererSettings={{
+                preserveAspectRatio: "xMidYMid slice",
+              }}
+            />{" "}
+          </div>
         </div>
         <div className="">
           <Image

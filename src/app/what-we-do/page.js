@@ -1,13 +1,17 @@
+"use client"
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
-import banner from "../../../public/assets/do.png";
+import banner from "../../../public/assets/what-to-do.json";
 import shape from "../../../public/assets/shape.png";
 import line from "../../../public/assets/ln.svg";
 import shape1 from "../../../public/assets/shape1.png";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { Aircraft } from "../what-we-do/_DoComponents/Aircraft";
 import { AircraftSourcing } from "../what-we-do/_DoComponents/AircraftSourcing";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function WhatWeDo() {
   return (
     <div className="bg-darkmode bg-cover">
@@ -35,11 +39,18 @@ export default function WhatWeDo() {
               </div>
             </div>
             <div className=" text-end">
-              <Image
-                className="w-full lg:ml-auto pb-10"
-                src={banner}
-                alt="banner"
-              />
+           
+                <div className="lottie-chart pb-4">
+                <Lottie
+                  animationData={banner}
+                  loop={true}
+                  className="w-full lg:ml-auto pb-10"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
             </div>
           </div>
         </div>

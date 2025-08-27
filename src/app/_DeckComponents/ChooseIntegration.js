@@ -3,9 +3,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import house from "../../../public/assets/house.png";
-import hands from "../../../public/assets/hands.png";
+import house from "../../../public/assets/flightdeck2.json";
+import hands from "../../../public/assets/flightdeck3.json";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const ChooseIntegration = () => {
   return (
     <section className="bg-deck-bg bg-cover bg-no-repeat bg-top  relative px-4 md:px-8 pb-56 pt-16 lg:pt-24">
@@ -32,11 +34,18 @@ export const ChooseIntegration = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
           <div>
             <div className="card-image bg-white rounded-3xl p-5 lg:p-10 border border-white hover:cursor-pointer hover:border-border-hover">
-              <Image
-                src={house}
-                className="w-full object-contain"
-                alt=""
-              />
+             
+               <div className="lottie-chart">
+                <Lottie
+                  animationData={house}
+                  loop={true}
+                  className="w-full"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
                <h3 className="text-xl xl:text-2xl mt-6 mb-4 text-title-color font-semibold">
                 In-house, install it yourself
               </h3>
@@ -50,7 +59,18 @@ export const ChooseIntegration = () => {
           </div>
           <div>
           <div className="card-image bg-white rounded-3xl  p-5 lg:p-10 border border-white hover:cursor-pointer hover:border-border-hover">
-              <Image src={hands} className="w-full object-contain" alt="" />
+          <div className="lottie-chart">
+                <Lottie
+                  animationData={hands}
+                  loop={true}
+                  className="w-full"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
+         
               <h3 className="text-xl xl:text-2xl mt-6 mb-4 text-title-color font-semibold">
                 Hands-off, leave it to the pros
               </h3>

@@ -7,8 +7,10 @@ import network from "../../../public/assets/network.png";
 import trusted from "../../../public/assets/trusted.png";
 import integration from "../../../public/assets/integration.png";
 import power from "../../../public/assets/power.png";
-import split from "../../../public/assets/split.png";
+import split from "../../../public/assets/lottie4.json";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const WhyEvojets = () => {
   return (
     <section className="bg-gradient-top  relative px-4 md:px-8 lg:pt-24 pt-12 pb-56">
@@ -109,7 +111,17 @@ export const WhyEvojets = () => {
 
         <div className="lg:grid lg:grid-cols-2 gap-5  flex flex-col-reverse mt-10  lg:mt-20 items-center">
           <div className="text-center">
-            <Image className="w-full lg:w-4/5" src={split} alt="flight" />
+            <div className="lottie-chart pb-4">
+              <Lottie
+                animationData={split}
+                loop={true}
+                className="w-full lg:w-4/5"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
           <div className="">
             <p className="uppercase text-xs text-primary-color border px-6 py-2 rounded-3xl border-second-border mb-8 w-max font-semibold">

@@ -1,13 +1,15 @@
+"use client";
 import Image from "next/image";
-import banner from "../../public/assets/banner.png";
+import banner from "../../public/assets/lottie1.json";
 import "./globals.css";
+import dynamic from "next/dynamic";
 import { InhouseFlight } from "./_homeComponents/InhouseFlight";
 import { PrivateFlight } from "./_homeComponents/PrivateFilght";
 import { Header } from "./_homeComponents/Header";
 import { WhyEvojets } from "./_homeComponents/WhyEvojets";
 import { AboveFooterCta } from "./_homeComponents/AboveFooterCta";
 import { Footer } from "./_homeComponents/Footer";
-
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function Home() {
   return (
     <main className="">
@@ -34,12 +36,18 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="xl:col-span-2 text-end">
-              <Image
-                className="w-full lg:w-4/5 lg:ml-auto"
-                src={banner}
-                alt="banner"
-              />
+            <div className="lg:col-span-2 text-end">
+              <div className="lottie-chart pb-4">
+                <Lottie
+                  animationData={banner}
+                  loop={true}
+                  className="w-full lg:w-4/5 lg:ml-auto"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
             </div>
           </div>
         </div>

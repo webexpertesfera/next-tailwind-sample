@@ -3,11 +3,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import flight from "../../../public/assets/private-flight.png";
+import flight from "../../../public/assets/lottie3.json";
 import research from "../../../public/assets/research.png";
 import arrow from "../../../public/assets/arw.png";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const PrivateFlight = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -43,17 +45,25 @@ export const PrivateFlight = () => {
             </div>
           </div>
           <div className="text-center lg:col-span-3">
-            <Image
-              className="w-full lg:w-4/5 lg:ml-auto"
-              src={flight}
-              alt="flight"
-            />
+          
+              <div className="lottie-chart pb-4">
+                <Lottie
+                  animationData={flight}
+                  loop={true}
+                  className="w-full lg:w-4/5 lg:ml-auto"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
           </div>
         </div>
 
         <div className="lg:grid lg:grid-cols-5 flex flex-col-reverse lg:gap-5 items-center pt-20">
           <div className="text-center mt-10 lg:mt-0 lg:col-span-3">
             <Image className="w-full lg:w-4/5" src={research} alt="research" />
+         
           </div>
           <div className="lg:col-span-2">
             <p className="uppercase text-xs text-green-color border px-6 py-2 rounded-3xl border-cyan-800 mb-8 w-max font-semibold">

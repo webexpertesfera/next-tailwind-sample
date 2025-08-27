@@ -3,9 +3,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import flight from "../../../public/assets/details.png";
-import hq from "../../../public/assets/welcome.png";
+import flight from "../../../public/assets/events1.json";
+import hq from "../../../public/assets/events2.json";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const Utilization = () => {
   return (
     <section className="py-12 relative px-4 md:px-8 lg:py-24">
@@ -35,12 +37,31 @@ export const Utilization = () => {
             </button>
           </div>
           <div className="text-center">
-            <Image className="w-full lg:ml-auto" src={flight} alt="flight" />
+           
+            <div className="lottie-chart">
+              <Lottie
+                animationData={flight}
+                loop={true}
+                className="w-full lg:ml-auto"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-5 mt-10  lg:mt-20 grid-cols-1 flex flex-col-reverse  items-center pt-8 lg:pt-12">
           <div className="text-center">
-            <Image className="w-full" src={hq} alt="hq" />
+          <Lottie
+                animationData={hq}
+                loop={true}
+                className="w-full"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
           </div>
           <div className="lg:pl-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">

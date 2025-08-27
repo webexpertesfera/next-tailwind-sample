@@ -54,7 +54,7 @@ body {
   background: #fff;
   position: absolute;
   top: 4px;
-  left: 46%;
+  left: 5%;
   transform: rotate(45deg);
 }
 .card-image:hover h3 {

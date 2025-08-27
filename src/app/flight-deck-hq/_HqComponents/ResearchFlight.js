@@ -3,10 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import flight from "../../../../public/assets/saving.png";
-import research from "../../../../public/assets/booking.png";
+import flight from "../../../../public/assets/flightdeck-hq2.json";
+import research from "../../../../public/assets/flightdeck-hq3.json";
 import arrow from "../../../../public/assets/chk.png";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const ResearchFlight = () => {
   return (
     <section className="bg-tab-bg  relative px-4 md:px-8 pt-24 pb-44">
@@ -55,13 +57,35 @@ export const ResearchFlight = () => {
             </div>
           </div>
           <div className="text-center ">
-            <Image className="w-full lg:ml-auto" src={flight} alt="flight" />
+          <div className="lottie-chart">
+                  <Lottie
+                    animationData={research}
+                    loop={true}
+                    className="w-full lg:ml-auto"
+                    autoplay={true}
+                    rendererSettings={{
+                      preserveAspectRatio: "xMidYMid slice",
+                    }}
+                  />{" "}
+                </div>
+           
           </div>
         </div>
 
         <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse lg:gap-5 items-center pt-0">
           <div className="text-center mt-10 lg:mt-0">
-            <Image className="w-full " src={research} alt="actionable" />
+         
+            <div className="lottie-chart">
+                  <Lottie
+                    animationData={flight}
+                    loop={true}
+                    className="w-full"
+                    autoplay={true}
+                    rendererSettings={{
+                      preserveAspectRatio: "xMidYMid slice",
+                    }}
+                  />{" "}
+                </div>
           </div>
           <div className="lg:pl-24">
             <h3 className="text-2xl xl:text-3xl text-title-color mb-6 font-semibold">

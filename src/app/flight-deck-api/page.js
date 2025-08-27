@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
-import banner from "../../../public/assets/offer.png";
+import banner from "../../../public/assets/flightdeck1.json";
 import shape from "../../../public/assets/shape.png";
 import shape1 from "../../../public/assets/shape1.png";
 import { HowItWorks } from "../_DeckComponents/HowItWorks";
@@ -9,7 +10,9 @@ import { ChooseIntegration } from "../_DeckComponents/ChooseIntegration";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
 import { StackBooking } from "../_DeckComponents/StackBooking";
 import { BuiltFlight } from "../_DeckComponents/BuiltFlight";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function FlightDeckApi() {
   return (
     <main className="bg-darkmode bg-cover">
@@ -38,7 +41,18 @@ export default function FlightDeckApi() {
               </div>
             </div>
             <div className=" text-end">
-              <Image className="w-full lg:ml-auto" src={banner} alt="banner" />
+            
+              <div className="lottie-chart">
+                <Lottie
+                  animationData={banner}
+                  loop={true}
+                  className="w-full lg:ml-auto"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
             </div>
           </div>
         </div>

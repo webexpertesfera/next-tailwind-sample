@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import flight from "../../../public/assets/flight.png";
+import flight from "../../../public/assets/lottie2.json";
 import estate from "../../../public/assets/estate.png";
 import deck from "../../../public/assets/deck.png";
 import trip from "../../../public/assets/trip.png";
@@ -11,7 +11,9 @@ import fbo from "../../../public/assets/fboo.png";
 import destination from "../../../public/assets/destination.png";
 import agent from "../../../public/assets/agent.png";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const InhouseFlight = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -59,7 +61,18 @@ export const InhouseFlight = () => {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center">
           <div className="text-center lg:col-span-2">
-            <Image className="w-full lg:w-4/5" src={flight} alt="flight" />
+            {/* <Image className="w-full lg:w-4/5" src={flight} alt="flight" /> */}
+            <div className="lottie-chart pb-4">
+                <Lottie
+                  animationData={flight}
+                  loop={true}
+                  className="w-full lg:w-4/5"
+                  autoplay={true}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                />{" "}
+              </div>
           </div>
           <div className="">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
