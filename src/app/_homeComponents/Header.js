@@ -196,7 +196,7 @@ export const Header = () => {
                                         </li>
                                         <li>
                                         <Link
-                                            href="/"
+                                            href="/about-us"
                                             className="block pb-3 text-white lg:text-para-color w-full text-sm  hover:text-primary-color"
                                             aria-current="page"
                                           >
