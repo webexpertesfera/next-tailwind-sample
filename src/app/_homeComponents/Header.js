@@ -9,6 +9,7 @@ import agent from "../../../public/assets/agents.png";
 import travel from "../../../public/assets/travel.png";
 import shop from "../../../public/assets/shp.png";
 import event from "../../../public/assets/event.png";
+import Link from "next/link";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -185,22 +186,22 @@ export const Header = () => {
                                       </h6>
                                       <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
                                         <li>
-                                          <a
-                                            href="#"
+                                          <Link
+                                            href="/what-we-do"
                                             className="block pb-3 text-sm text-white lg:text-para-color hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             What we do
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a
-                                            href="#"
+                                        <Link
+                                            href="/"
                                             className="block pb-3 text-white lg:text-para-color w-full text-sm  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             How we work
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                       <h6 className="text-sm uppercase text-title font-semibold pt-5 pb-5">
@@ -208,22 +209,22 @@ export const Header = () => {
                                       </h6>
                                       <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
                                         <li>
-                                          <a
-                                            href="#"
+                                          <Link
+                                            href="/flight-deck-api"
                                             className="block pb-3 text-sm text-white lg:text-para-color  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             evoJets API
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a
-                                            href="#"
+                                        <Link
+                                            href="/flight-deck-hq"
                                             className="block pb-3  w-full text-sm text-white lg:text-para-color  hover:text-primary-color"
                                             aria-current="page"
                                           >
                                             evoJets HQ
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -234,8 +235,8 @@ export const Header = () => {
                                     </h6>
                                     <ul className="font-medium grid gap-5 grid-cols-1 lg:grid-cols-2 pb-[30px] md:p-0 md:bg-transparent">
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                        <Link
+                                          href="/real-estate-and-hospitality"
                                           className="flex w-full items-start gap-2 text-sm  text-white lg:text-para-color hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -246,11 +247,11 @@ export const Header = () => {
                                             alt="real estate"
                                           />
                                           Real Estate & Hospitality
-                                        </a>
+                                        </Link>
                                       </li>
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                        <Link
+                                          href="/fbos-and-mros"
                                           className="flex items-start gap-2 text-white lg:text-para-color  w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -261,11 +262,11 @@ export const Header = () => {
                                             alt="real estate"
                                           />
                                           FBOs & MROs
-                                        </a>
+                                        </Link>
                                       </li>
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                        <Link
+                                          href="/travel-and-lifestyle"
                                           className="flex w-full items-start gap-2 text-white lg:text-para-color text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -276,11 +277,11 @@ export const Header = () => {
                                             alt="travel"
                                           />
                                           Travel & Lifestyle
-                                        </a>
+                                        </Link>
                                       </li>
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                      <Link
+                                          href="/agents-and-advisors"
                                           className="flex items-start gap-2 text-white lg:text-para-color w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -291,11 +292,11 @@ export const Header = () => {
                                             alt="real estate"
                                           />
                                           Agents & Advisors
-                                        </a>
+                                        </Link>
                                       </li>
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                      <Link
+                                          href="/networks"
                                           className="flex w-full items-start gap-2 text-white lg:text-para-color text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -306,11 +307,11 @@ export const Header = () => {
                                             alt="travel"
                                           />
                                           Networks & Marketplaces
-                                        </a>
+                                        </Link>
                                       </li>
                                       <li className="w-full lg:w-72">
-                                        <a
-                                          href="#"
+                                        <Link
+                                          href="/events-and-destinations"
                                           className="flex items-start gap-2 text-white lg:text-para-color  w-full text-sm  hover:text-primary-color"
                                           aria-current="page"
                                         >
@@ -321,7 +322,7 @@ export const Header = () => {
                                             alt="real estate"
                                           />
                                           Events & Destinations
-                                        </a>
+                                        </Link>
                                       </li>
                                     </ul>
                                   </div>
