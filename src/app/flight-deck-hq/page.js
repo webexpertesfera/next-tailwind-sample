@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 
 import { Header } from "../_homeComponents/Header";
@@ -21,13 +21,16 @@ export default function FlightDeckHq() {
         <div className="container mx-auto">
           <div className="">
             <div className="text-white text-center xl:w-2/4 m-auto">
+              <p className="uppercase text-xs text-green-color border px-6 py-2 rounded-3xl border-cyan-800 mb-8 m-auto w-max font-semibold">
+                evojets HQ
+              </p>
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
                 A central hub for your charter sales ecosystem
               </h2>
               <p className="text-base leading-normal">
-                Flight Deck HQ consolidates your flight requests, connects your
-                team to evoJets for transparent fulfillment, and provides
-                valuable jet charter tools and insights.
+                evoJets HQ consolidates your flight requests, connects your team
+                to evoJets for transparent fulfillment, and provides valuable
+                jet charter tools and insights.
               </p>
               <div className="banenr-btns pt-10 flex items-center justify-center gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">

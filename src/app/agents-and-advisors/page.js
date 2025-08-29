@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
@@ -25,23 +25,19 @@ export default function AgentsAndAdvisors() {
                 Your trusted private jet platform and partner
               </h2>
               <p className="text-base leading-normal">
-                Give your clients more than just a recommendation with Flight
-                Deck, a complete solution for charter flight research and
-                booking. Your clients come to you for counsel and vetted
-                providers. evoJets is a staple in on-demand charter serving US
-                Government officials, foreign royalty, Fortune 100 CEOs, and
-                more.  Our tools give you the resources to deliver reliable
-                private jet insight with integrated booking and backend
-                fulfillment.
+                Your clients depend on you for reliable information and trusted
+                service providers. evoJets Tech Services is a complete solution
+                for charter flight research and booking, with integrated
+                fulfillment by evoJets, a leader in on-demand jet charter.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                  Get Started
+                  Contact Sales
                 </button>
               </div>
             </div>
             <div className=" text-end">
-            <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={real}
                   loop={true}
@@ -52,7 +48,7 @@ export default function AgentsAndAdvisors() {
                   }}
                 />{" "}
               </div>
-            
+
               <Image className="w-full lg:ml-auto" src={real} alt="banner" />
             </div>
           </div>

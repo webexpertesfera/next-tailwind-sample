@@ -210,7 +210,7 @@ export const Header = () => {
                                       <ul className="font-medium  bg-main-color md:p-0 md:bg-transparent">
                                         <li>
                                           <Link
-                                            href="/flight-deck-api"
+                                            href="/evojets-api"
                                             className="block pb-3 text-sm text-white lg:text-para-color  hover:text-primary-color"
                                             aria-current="page"
                                           >

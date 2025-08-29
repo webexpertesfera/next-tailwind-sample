@@ -20,22 +20,20 @@ export const HowItWorks = () => {
           </div>
           <div>
             <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
-              Flight Deck provides the essential software components for an
-              end-to-end digital charter brokerage. Pre-qualify users with
-              instant, accurate prices and manage all requests in .
-              <Link href="#" className="text-primary-color underline">
-                Flight Deck HQ.
+              We provide the essential software components for end-to-end jet
+              charter booking. Pre-qualify users with instant, accurate prices
+              and monitor everything in
+              <Link href="#" className="text-primary-color underline ms-1">
+                evoJets HQ.
               </Link>{" "}
             </p>
             <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
-              We’ve spent years refining the inbound flight lead funnel and
-              offer four endpoints to power the whole process, with evoJets
-              there for fulfillment.
+              With our four efficient endpoints, any modern digital property can
+              feature an inbound private flight lead funnel, with evoJets there
+              for fulfillment.
             </p>
           </div>
         </div>
-
-      
       </div>
     </section>
   );

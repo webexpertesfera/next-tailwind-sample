@@ -26,7 +26,7 @@ export const WhatWeDo = () => {
               Our Process
             </h2>
           </div>
-          <div className="lg:col-span-2">   
+          <div className="lg:col-span-2">
             <div className="">
               {/* Accordion for  Onboard */}
               <div className="accordion border-accbg border rounded-xl my-2">
@@ -43,10 +43,19 @@ export const WhatWeDo = () => {
                 {activeAccordion === "onboard" && (
                   <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sagittis purus sit amet volutpat consequat mauris.
-                      Pulvinar elementum integer enim neque.
+                      We will work with your team to discuss an optimal
+                      engagement strategy on an intro call, including technology
+                      integrations, user requirements, expected flight volumes,
+                      and your desired revenue outcomes.
+                    </p>{" "}
+                    <p className="text-sm mt-3 text-para-color  font-medium md:text-base">
+                      Our API docs can be used to integrate our software by your
+                      team. If you prefer, our tech team can handle any web
+                      integration.
+                    </p>{" "}
+                    <p className="text-sm mt-3 text-para-color  font-medium md:text-base">
+                      Your team will have access to a dedicated rep for all
+                      flight requests, and we will provide demos for evoJets HQ.
                     </p>
                   </div>
                 )}
@@ -66,10 +75,14 @@ export const WhatWeDo = () => {
                 {activeAccordion === "collab" && (
                   <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sagittis purus sit amet volutpat consequat mauris.
-                      Pulvinar elementum integer enim neque.
+                      We truly want to partner with your business - this is not
+                      just a marketing cliche. Your success is our success, and
+                      we will work with your team in whatever ways make you
+                      comfortable.
+                    </p>{" "}
+                    <p className="text-sm mt-3 text-para-color  font-medium md:text-base">
+                      You can stay completely in the loop on all flight related
+                      matters, or stay out of the process entirely.
                     </p>
                   </div>
                 )}
@@ -90,15 +103,44 @@ export const WhatWeDo = () => {
                 {activeAccordion === "booking" && (
                   <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sagittis purus sit amet volutpat consequat mauris.
-                      Pulvinar elementum integer enim neque.
+                      evoJets will handle quoting, contracts, invoices,
+                      payments, aircraft sourcing, and everything in between. We
+                      take the headache and financial risk associated with every
+                      flight, leaving your team stress-free.
+                    </p>{" "}
+                    <p className="text-sm mt-3 text-para-color  font-medium md:text-base">
+                      evoJets HQ provides visibility into every stage of the
+                      flight booking process, from initial quote to final
+                      itinerary. And your team has a dedicated portal to submit
+                      ad-hoc flight requests directly to evoJets.
                     </p>
                   </div>
                 )}
               </div>
-
+              {/* Accordion for   Legal */}
+              <div className="accordion border-accbg border rounded-xl my-2">
+                <h3
+                  className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
+                    activeAccordion === "legal"
+                      ? "active bg-white text-primary-color "
+                      : ""
+                  }`}
+                  onClick={() => toggleAccordion("legal")}
+                >
+                  Legal
+                </h3>
+                {activeAccordion === "legal" && (
+                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
+                    <p className="text-sm text-para-color font-medium md:text-base">
+                      We draft contracts in the name of the payer. If your
+                      clients are paying, then they must be the ones to sign
+                      contracts and remit payment. If your company is the payer,
+                      we can draft all contracts for you to sign, making you
+                      and/or your company the Client of record.
+                    </p>
+                  </div>
+                )}
+              </div>
               {/* Accordion for   Client interaction */}
               <div className="accordion border-accbg border rounded-xl my-2">
                 <h3
@@ -114,34 +156,11 @@ export const WhatWeDo = () => {
                 {activeAccordion === "interaction" && (
                   <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
                     <p className="text-sm text-para-color  font-medium md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sagittis purus sit amet volutpat consequat mauris.
-                      Pulvinar elementum integer enim neque.
-                    </p>
-                  </div>
-                )}
-              </div>
-
-               {/* Accordion for   Legal */}
-               <div className="accordion border-accbg border rounded-xl my-2">
-                <h3
-                  className={`text-title-color font-semibold text-xl rounded-xl cursor-pointer flex justify-between items-center  p-4 gap-2 md:px-8 md:py-6 bg-accbg  hover:text-primary-color ${
-                    activeAccordion === "legal"
-                      ? "active bg-white text-primary-color "
-                      : ""
-                  }`}
-                  onClick={() => toggleAccordion("legal")}
-                >
-                 Legal
-                </h3>
-                {activeAccordion === "legal" && (
-                  <div className="accordion-content px-4 lg:px-8 pb-4 transition-transform  duration-300">
-                    <p className="text-sm text-para-color font-medium md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sagittis purus sit amet volutpat consequat mauris.
-                      Pulvinar elementum integer enim neque.
+                      For compliance and legal protection purposes, evoJets must
+                      communicate directly with the person/entity signing our
+                      charter contracts. If your clients are signing, you can
+                      remain 100% in the loop on all communication, but we must
+                      have direct contact with the signer.
                     </p>
                   </div>
                 )}
@@ -150,7 +169,11 @@ export const WhatWeDo = () => {
           </div>
         </div>
       </div>
-      <Image className="hidden lg:block absolute top-52 left-0 h-96 w-auto" src={map} alt="map" />
+      <Image
+        className="hidden lg:block absolute top-52 left-0 h-96 w-auto"
+        src={map}
+        alt="map"
+      />
     </section>
   );
 };

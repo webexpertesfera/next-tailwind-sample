@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
@@ -22,24 +22,22 @@ export default function Networks() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
             <div className="text-white lg:pr-10">
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
-                White label integrations with seamless fulfillment
+                White label integrations with seamless fulfillment.
               </h2>
               <p className="text-base leading-normal">
-                Your community trusts you to deliver reliable solutions tailored
-                for your ecosystem - Flight Deck checks all your boxes. Build a
-                fully customized workflow for your members to view instant
-                pricing and related private flight data, right on your platform.
-                Booking requests are handled by evoJets for a seamless handoff
-                from inquiry to fulfillment.
+                Build a fully customized workflow for users to view instant
+                pricing and flight data directly on your platform. Bookings are
+                handled by the exports at evoJets for a seamless handoff from
+                initial inquiry to in-flight catering.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                  Get Started
+                  contact sales
                 </button>
               </div>
             </div>
             <div className=" text-end">
-            <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={real}
                   loop={true}
@@ -50,7 +48,6 @@ export default function Networks() {
                   }}
                 />{" "}
               </div>
-            
             </div>
           </div>
         </div>

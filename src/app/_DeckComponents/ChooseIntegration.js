@@ -23,19 +23,17 @@ export const ChooseIntegration = () => {
           </div>
           <div>
             <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
-              Flight Deck gives you full flexibility in your integration
-              strategy. Build a highly customized booking workflow yourself, or
-              leave the technical aspects to our onboarding team. Either way,
-              your website or app will be outfitted with a complete solution for
-              online flight booking.
+              Build a highly customized booking workflow yourself, or leave the
+              technical aspects to our onboarding team. Either way, your website
+              or app will be outfitted with a complete solution for online
+              flight booking.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
           <div>
             <div className="card-image bg-white rounded-3xl p-5 lg:p-10 border border-white hover:cursor-pointer hover:border-border-hover">
-             
-               <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={house}
                   loop={true}
@@ -46,11 +44,11 @@ export const ChooseIntegration = () => {
                   }}
                 />{" "}
               </div>
-               <h3 className="text-xl xl:text-2xl mt-6 mb-4 text-title-color font-semibold">
+              <h3 className="text-xl xl:text-2xl mt-6 mb-4 text-title-color font-semibold">
                 In-house, install it yourself
               </h3>
               <p className="text-base text-para-color leading-normal">
-                Have your own engineers?  Our developer docs create a complete
+                Have your own engineers? Our developer docs create a complete
                 roadmap for any application of our APIs imaginable, including
                 code snippets, live demos, and all the technical elements your
                 developers need.
@@ -58,8 +56,8 @@ export const ChooseIntegration = () => {
             </div>
           </div>
           <div>
-          <div className="card-image bg-white rounded-3xl  p-5 lg:p-10 border border-white hover:cursor-pointer hover:border-border-hover">
-          <div className="lottie-chart">
+            <div className="card-image bg-white rounded-3xl  p-5 lg:p-10 border border-white hover:cursor-pointer hover:border-border-hover">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={hands}
                   loop={true}
@@ -70,12 +68,12 @@ export const ChooseIntegration = () => {
                   }}
                 />{" "}
               </div>
-         
+
               <h3 className="text-xl xl:text-2xl mt-6 mb-4 text-title-color font-semibold">
                 Hands-off, leave it to the pros
               </h3>
               <p className="text-base text-para-color leading-normal">
-                Need a no-code solution?  Our onboarding team can deliver a
+                Need a no-code solution? Our onboarding team can deliver a
                 white-label workflow with minimal resource drain on your team,
                 incorporating your branding, UX considerations, and existing
                 workflows.

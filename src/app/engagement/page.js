@@ -16,15 +16,16 @@ export default function Engagement() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
             <div className="text-white lg:pr-10 lg:col-span-3">
-              <p className="uppercase text-xs bg-para-color text-border-hover border px-4 py-1  rounded-3xl border-border-hover w-max font-semibold">
-                How we work
-              </p>
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8 mt-10">
-                We offer custom engagements with flexible terms.
+                We offer custom engagements with flexible terms
               </h2>
               <p className="text-base leading-normal">
                 Every partnership is unique, and we tailor our engagements to
-                meet the needs of your business, clients, and stakeholders.
+                meet the needs of your clients and stakeholders.
+              </p>
+              <p className="text-base leading-normal">
+                Get in touch with a team member to discuss the many ways evoJets
+                Tech Services can benefit your business.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">

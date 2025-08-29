@@ -20,9 +20,9 @@ export const ResearchFlight = () => {
           Research flights and send requests to evoJets
         </h2>
         <p className="text-base text-center text-para-color lg:w-1/2 m-auto leading-normal mb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
-          vivamus arcu felis bibendum ut tristique et.
+          If your team is fielding and quoting flight requests, they need
+          evoJets HQ. Save the time and hassle of calling for quotes, and send
+          qualified flight requests directly to Evo - job done.
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           <div className="lg:pe-24">
@@ -37,79 +37,91 @@ export const ResearchFlight = () => {
 
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-               <p className="text-base font-medium">Search over 14,000 airports globally</p>
+              <p className="text-base font-medium">
+                Search over 14,000 airports globally
+              </p>
             </div>
             <div className="bg-lightbg  rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
               <p className="text-base font-medium">
-              Generate unlimited price estimates
+                Generate unlimited price estimates
               </p>
             </div>
             <div className="bg-lightbg   rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
               <p className="text-base font-medium">
-              Embedded flight request form
+                View flight time by aircraft type
               </p>
             </div>
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-              <p className="text-base font-medium">Send messages to your evoJets rep</p>
+              <p className="text-base font-medium">
+                Embedded flight request form
+              </p>
             </div>
           </div>
           <div className="text-center ">
-          <div className="lottie-chart">
-                  <Lottie
-                    animationData={research}
-                    loop={true}
-                    className="w-full lg:ml-auto"
-                    autoplay={true}
-                    rendererSettings={{
-                      preserveAspectRatio: "xMidYMid slice",
-                    }}
-                  />{" "}
-                </div>
-           
+            <div className="lottie-chart">
+              <Lottie
+                animationData={research}
+                loop={true}
+                className="w-full lg:ml-auto"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
         </div>
 
         <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse lg:gap-5 items-center pt-0">
           <div className="text-center mt-10 lg:mt-0">
-         
             <div className="lottie-chart">
-                  <Lottie
-                    animationData={flight}
-                    loop={true}
-                    className="w-full"
-                    autoplay={true}
-                    rendererSettings={{
-                      preserveAspectRatio: "xMidYMid slice",
-                    }}
-                  />{" "}
-                </div>
+              <Lottie
+                animationData={flight}
+                loop={true}
+                className="w-full"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
           <div className="lg:pl-24">
             <h3 className="text-2xl xl:text-3xl text-title-color mb-6 font-semibold">
-            Integrated booking
+              Integrated booking
             </h3>
             <p className="text-base text-para-color leading-normal mb-8">
-            Hand the request off to evoJets right from the HQ Calculator.  Run price estimates and deliver info to clients, then click ‘send’ for evoJets to handle the rest.
+              Hand the request off to evoJets right from the HQ Calculator. Run
+              price estimates and deliver info to clients, then click ‘send’ for
+              evoJets to handle the rest.
             </p>
 
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-               <p className="text-base font-medium">Send directly to your dedicated rep</p>
+              <p className="text-base font-medium">
+                Send directly to your dedicated rep
+              </p>
             </div>
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-               <p className="text-base font-medium">Add commission detail and booking notes</p>
+              <p className="text-base font-medium">
+                Add commission detail and booking notes
+              </p>
             </div>
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-               <p className="text-base font-medium">Seamless sending from HQ Calculator</p>
+              <p className="text-base font-medium">
+                Seamless sending from HQ Calculator
+              </p>
             </div>
             <div className="bg-lightbg rounded-xl p-4 text-para-color flex items-center gap-2 mb-2">
               <Image className="h-6 w-6" src={arrow} alt="arrow" />
-               <p className="text-base font-medium">Immediate delivery to Evo for handling</p>
+              <p className="text-base font-medium">
+                Immediate delivery to Evo for handling
+              </p>
             </div>
           </div>
         </div>

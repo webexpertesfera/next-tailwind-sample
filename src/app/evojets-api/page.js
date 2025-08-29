@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
@@ -8,12 +8,12 @@ import shape1 from "../../../public/assets/shape1.png";
 import { HowItWorks } from "../_DeckComponents/HowItWorks";
 import { ChooseIntegration } from "../_DeckComponents/ChooseIntegration";
 import { AboveFooterCta } from "../_homeComponents/AboveFooterCta";
-import { StackBooking } from "../_DeckComponents/StackBooking";
+import { StackBooking } from "../_DeckComponents/StackBooking";        
 import { BuiltFlight } from "../_DeckComponents/BuiltFlight";
 import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-export default function FlightDeckApi() {
+export default function EvojetsApi() {
   return (
     <main className="bg-darkmode bg-cover">
       <Header />
@@ -26,10 +26,8 @@ export default function FlightDeckApi() {
               </h2>
               <p className="text-base leading-normal">
                 Our combined API resources cover every aspect of the private
-                flight booking process. With a single integration, display
-                tailored pricing and aircraft options, collect user information,
-                field booking requests, and manage all requests on a centralized
-                platform.
+                flight booking process. With a single integration, generate and
+                manage all flight requests on a centralized platform.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
@@ -41,7 +39,6 @@ export default function FlightDeckApi() {
               </div>
             </div>
             <div className=" text-end">
-            
               <div className="lottie-chart">
                 <Lottie
                   animationData={banner}
@@ -57,7 +54,11 @@ export default function FlightDeckApi() {
           </div>
         </div>
         <div className="">
-          <Image src={shape} className="absolute top-0 left-1/2 h-8 lg:h-auto w-auto lg:left-2/3" alt="shape" />
+          <Image
+            src={shape}
+            className="absolute top-0 left-1/2 h-8 lg:h-auto w-auto lg:left-2/3"
+            alt="shape"
+          />
         </div>
         <div className="">
           <Image

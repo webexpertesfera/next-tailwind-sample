@@ -16,19 +16,19 @@ export const Utilization = () => {
           Utilization
         </p>
         <h2 className="text-3xl text-title-color lg:text-center xl:text-5xl my-5 lg:mb-16 font-semibold">
-          Lorem Ipsum Dolor Sit Amet
+          Enrich your software and empower your team
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           <div className="lg:pe-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck API
+              evoJets API
             </h2>
             <p className="text-base font-medium text-para-color leading-normal mb-5">
               Integrate our API with your client-facing software or internal
               portal to utilize our flight booking tools in whatever way serves
               your business. Let clients book flights in a white-label workflow
-              on your website or app.  Control the design and all Flight Data
-              displayed.
+              on your website or app. Control the design and all flight data
+              displayed to users.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore API
@@ -64,15 +64,14 @@ export const Utilization = () => {
           </div>
           <div className="lg:pl-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck HQ
+              evoJets HQ
             </h2>
             <p className="text-base font-medium text-para-color leading-normal mb-5">
-              Give your reps the gift of HQ, a complete booking solution for
-              researching and booking private flights, with a direct connection
-              to evoJets, your embedded fulfillment partner. Login to HQ to view
-              all API activity, access pricing and research tools, monitor
-              progress and communicate with Evo on all existing flights, and
-              request new ones.
+              Give your reps the gift of HQ, a complete solution for researching
+              and booking private flights, with a direct connection to evoJets,
+              your embedded fulfillment partner. Login to HQ to view all API
+              activity, access pricing and research tools, monitor existing deal
+              progress and submit new flight requests to Evo directly.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore HQ

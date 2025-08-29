@@ -17,11 +17,11 @@ export const TripReq = () => {
             <p className="text-base text-para-color leading-normal mb-8">
               Convert qualified visitors into leads with a complete booking
               form. View all user activity, estimates, and flight requests in
-              Flight Deck HQ.
+              evoJets HQ.
             </p>
-            <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
+            {/* <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
               Get Started
-            </button>
+            </button> */}
           </div>
           <div className="lg:col-span-2 text-center">
             <Image

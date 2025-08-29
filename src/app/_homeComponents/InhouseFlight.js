@@ -57,46 +57,48 @@ export const InhouseFlight = () => {
           Platform
         </p>
         <h2 className="text-3xl text-title-color xl:text-5xl mb-10 font-semibold">
-          Your instant, in-house flight department
+          The first and only private jet booking software with built-in
+          fulfillment.
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center">
           <div className="text-center lg:col-span-2">
             {/* <Image className="w-full lg:w-4/5" src={flight} alt="flight" /> */}
             <div className="lottie-chart pb-4">
-                <Lottie
-                  animationData={flight}
-                  loop={true}
-                  className="w-full lg:w-4/5"
-                  autoplay={true}
-                  rendererSettings={{
-                    preserveAspectRatio: "xMidYMid slice",
-                  }}
-                />{" "}
-              </div>
+              <Lottie
+                animationData={flight}
+                loop={true}
+                className="w-full lg:w-4/5"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
           <div className="">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck was created by{" "}
-              <span className="text-primary-color"> evoJets, </span> and the
-              experts at Evo manage all Flight Deck charter requests. 
+              Our mission is to simplify the private jet booking process for
+              non-aviation organizations.
             </h2>
             <p className="text-base text-para-color leading-normal mb-5">
-              After thousands of flights completed for hotels, travel planners,
-              and EAs/PAs, we understand the risk and hassle these partners
-              experience in booking flights for clients, employees, and
-              stakeholders.
+              With thousands of flights completed for concierges, travel
+              planners, and other B2B partners, we understand the risk and
+              hassle they experience when booking flights for clients,
+              employees, and stakeholders.
             </p>
             <p className="text-base text-para-color leading-normal">
               Outfit your organization with the tools to harness its private
-              flight demand with evoJets handling contracts, payments, and all
-              the operational hassle.  Let your team focus on what they do best,
-              and leave the jet charter stress to Flight Deck and evoJets.
+              flight demand, with{" "}
+              <span className="text-primary-color">evoJets </span> handling
+              contracts, payments, aircraft sourcing, and all the logistical
+              headaches. Let your team focus on what they do best, and leave the
+              jet charter stress to evoJets.
             </p>
           </div>
         </div>
 
         <h2 className="text-3xl text-title-color xl:text-5xl pt-12 mb-6 lg:mb-24 lg:pt-24 font-semibold">
-          Who is Flight Deck for?
+          Does your company interact with private aviation clients?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <div className="">
@@ -139,10 +141,10 @@ export const InhouseFlight = () => {
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image
@@ -184,10 +186,10 @@ export const InhouseFlight = () => {
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image
@@ -229,10 +231,10 @@ export const InhouseFlight = () => {
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image
@@ -269,15 +271,15 @@ export const InhouseFlight = () => {
                     <div className="accordion-content px-4 lg:px-8 py-4">
                       <p className="text-sm text-para-color md:text-base">
                         Convert your website into a charter sales lead engine
-                        with Flight Deck API, and leverage HQ for supplemental
-                        lift and off-fleet requests.
+                        with the evoJets API, and leverage evoJets HQ for
+                        supplemental lift and off-fleet requests.
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image
@@ -319,10 +321,10 @@ export const InhouseFlight = () => {
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image
@@ -358,16 +360,15 @@ export const InhouseFlight = () => {
                   {activeAccordion === "events" && (
                     <div className="accordion-content lg:px-8 px-4 py-4">
                       <p className="text-sm text-para-color md:text-base">
-                        Equip your website or mobile app with embedded private
-                        flight booking to your event or destination - flights
-                        fulfilled by evoJets.
+                      Equip your website or mobile app with embedded private flight booking to your event or destination with all flights fulfilled by evoJets.
+
                       </p>
                       <div className="banenr-btns pt-6 flex gap-5">
                         <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                          Get Started
+                          Contact Sales
                         </button>
                         <button className="text-primary-color  text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
-                          Learn More
+                          Read More
                         </button>
                       </div>
                       <Image

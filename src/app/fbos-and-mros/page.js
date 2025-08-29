@@ -22,23 +22,22 @@ export default function FbosAndMros() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
             <div className="text-white lg:pr-10">
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
-                Charter solutions for your customers and stakeholders
+                Charter solutions for your many customers
               </h2>
               <p className="text-base leading-normal">
-                Your organization is part of the critical infrastructure of
-                business aviation, but are sales and technology pain points for
-                your business? Flight Deck API + HQ is a full-stack solution for
-                charter sales, lead management, quoting, and flight fulfillment
-                by evoJets.
+                evoJets Tech Services is a full-stack charter sales solution.
+                With our digital resources and the evoJets team handling
+                fulfillment, you can provide supplemental lift to your owners,
+                operators, and any flyer that walks through your doors.
               </p>
-              <div className="banenr-btns pt-10 flex gap-5">
+              {/* <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
                   Get Started
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className=" text-end">
-            <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={real}
                   loop={true}
@@ -49,7 +48,6 @@ export default function FbosAndMros() {
                   }}
                 />{" "}
               </div>
-            
             </div>
           </div>
         </div>

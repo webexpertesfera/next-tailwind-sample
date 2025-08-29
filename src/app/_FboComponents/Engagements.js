@@ -19,11 +19,6 @@ export const Engagements = () => {
               Popular Engagements
             </h2>
 
-            <p className="text-base text-para-color leading-normal font-medium mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud.
-            </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Engagement Overview
             </button>
@@ -36,7 +31,7 @@ export const Engagements = () => {
                   Commission splits
                 </h6>
                 <p className="text-base  font-medium text-para-color">
-                  Earn a share of the net revenue on each completed flight.
+                  Earn a piece of the net revenue on each completed flight.
                 </p>
               </div>
             </div>
@@ -47,7 +42,8 @@ export const Engagements = () => {
                   Referral fees
                 </h6>
                 <p className="text-base  font-medium text-para-color">
-                  Receive a guaranteed fee upon booking (signed contract)
+                  Receive a guaranteed referral fee upon booking (signed
+                  contract).
                 </p>
               </div>
             </div>
@@ -55,10 +51,11 @@ export const Engagements = () => {
               <Image src={check} className="me-2 h-8 w-8" alt="" />
               <div>
                 <h6 className="text-lg text-title-color font-semibold">
-                Client discounts
+                  Client discounts
                 </h6>
                 <p className="text-base  font-medium text-para-color">
-                Offer discounts and credits to clients, absorbed 100% by evoJets.
+                  Offer discounts and credits to clients, absorbed 100% by
+                  Flight Deck.
                 </p>
               </div>
             </div>

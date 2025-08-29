@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Header } from "../_homeComponents/Header";
 import { Footer } from "../_homeComponents/Footer";
@@ -23,23 +23,22 @@ export default function TravelAndLifestyle() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
             <div className="text-white lg:pr-10">
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
-                The tools of thetrade at the pushof a button
+                The tools of the trade at the push of a button
               </h2>
               <p className="text-base leading-normal">
-                Compiling quotes, comparing providers, and learning the nuances
-                of private jet charter is a time suck for your sales team and
-                account managers. With Flight Deck, your reps and your software
-                have instant access to pricing and research tools with a direct
+                Compiling quotes and comparing providers is a time suck for your
+                team. With evoJets Tech Services, your company has instant
+                access to private flight booking resources and a direct
                 connection to evoJets for fulfillment.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                  Get Started
+                Contact Sales
                 </button>
               </div>
             </div>
             <div className=" text-end">
-            <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={real}
                   loop={true}
@@ -50,7 +49,6 @@ export default function TravelAndLifestyle() {
                   }}
                 />{" "}
               </div>
-          
             </div>
           </div>
         </div>

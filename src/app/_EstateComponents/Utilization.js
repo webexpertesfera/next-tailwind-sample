@@ -16,19 +16,19 @@ export const Utilization = () => {
           Utilization
         </p>
         <h2 className="text-3xl text-title-color mt-5 lg:text-center xl:text-5xl mb-5 lg:mb-16 font-semibold">
-          Lorem Ipsum Dolor Sit Amet
+          Flight booking solutions for any situation
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           <div className="lg:pe-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck API
+              evoJets API
             </h2>
             <p className="text-base text-para-color leading-normal mb-5">
-              Embed a white-label flight booking workflow into the existing
-              booking engine on your website or app.  Allow clients to explore
-              fully branded flight solutions to and from your properties. Set
-              limits on the airports, aircraft, availability and all other
-              flight data offered in your custom form flow.
+              Embed a white-labeled flight booking workflow into the booking
+              engine on your website or app. Set limits on the airports,
+              aircraft, availability, and all other flight data offered in your
+              custom flow. Take the stress and time suck of calling for quotes
+              and vetting providers off your team, and leave it all to evoJets.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore API
@@ -64,13 +64,14 @@ export const Utilization = () => {
           </div>
           <div className="lg:pl-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck HQ
+              evoJets HQ
             </h2>
             <p className="text-base text-para-color leading-normal mb-5">
-              Monitor all price estimates provided to your users and all hard
-              booking requests on Flight Deck HQ, in real-time as they occur.
-              View the progress and status of your flight inquiries and contact
-              the evoJets rep assigned to your account for updates.
+              Monitor all price estimates and flight booking requests generated
+              by your users in real-time. Submit your own flight requests to
+              evoJets using our embedded request engine. View the progress and
+              status of all your flight inquiries and contact the evoJets rep
+              assigned to your account for updates.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore HQ

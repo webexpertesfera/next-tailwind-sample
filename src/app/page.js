@@ -22,18 +22,13 @@ export default function Home() {
                 Instant aviation infrastructure
               </h2>
               <p className="text-base leading-normal">
-                Flight Deck helps organizations offer private flight booking
-                directly to customers. Convert your private flight demand with
-                our suite of software services and operational resources - no
-                aviation experience required.
+              evoJets Tech Services helps companies offer private flight booking directly to customers. Turn your website or app into a flight booking engine with our powerful software and dedicated operational resources - no aviation experience required.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
                   Get Started
                 </button>
-                <button className="text-white  text-sm 2xl:text-base px-1 py-2 border-b border-border-color">
-                  Learn More
-                </button>
+             
               </div>
             </div>
             <div className="lg:col-span-2 text-end">

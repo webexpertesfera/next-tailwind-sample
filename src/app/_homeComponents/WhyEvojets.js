@@ -19,8 +19,7 @@ export const WhyEvojets = () => {
           Why evoJets
         </p>
         <h2 className="text-3xl xl:text-5xl mb-14 text-title-color font-semibold text-center lg:w-3/5 m-auto">
-          The first and only private jet booking software with built-in
-          fulfillment.
+          Your instant, in-house flight department
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
           <div>
@@ -51,15 +50,12 @@ export const WhyEvojets = () => {
               </div>
               <div className="grow pt-3">
                 <h4 className="text-xl text-title-color lg:text-2xl font-medium mb-3">
-                  Network effects
+                  Scalable solutions
                 </h4>
                 <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
-                  Leverage the
-                  <Link href="#" className="text-primary-color underline">
-                    aggregate demand
-                  </Link>{" "}
-                  of evoJets and Flight Deck to lower costs, reduce emissions,
-                  and increase the efficiency of your private flight bookings.
+                  Our API resources can handle any organization’s demand flow,
+                  and the evoJets team is on standby to field as many flight
+                  requests as your company can generate.
                 </p>
               </div>
             </div>
@@ -76,7 +72,7 @@ export const WhyEvojets = () => {
                 <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
                   Deploy our APIs on your website, ERP, or mobile app however
                   you choose with our detailed
-                  <Link href="#" className="text-primary-color underline">
+                  <Link href="#" className="text-primary-color ms-1 underline">
                     developer docs
                   </Link>{" "}
                   packed with code snippets and live demos.
@@ -94,15 +90,9 @@ export const WhyEvojets = () => {
                   Powerful, actionable data
                 </h4>
                 <p className="text-base text-para-color leading-normal mb-5 lg:w-4/5">
-                  Gain real-time insights into customer behavior with
-                  <Link href="#" className="text-primary-color underline">
-                    dashboard analytics,
-                  </Link>{" "}
-                  and instantly respond to private flight inquiries with
-                  powerful{" "}
-                  <Link href="#" className="text-primary-color underline">
-                    research tools.{" "}
-                  </Link>
+                  Gain real-time insights into customer behavior with dashboard
+                  analytics, and instantly respond to private flight inquiries
+                  with powerful research tools.
                 </p>
               </div>
             </div>
@@ -131,19 +121,16 @@ export const WhyEvojets = () => {
               Custom account configurations
             </h2>
             <p className="text-base text-para-color leading-normal mb-5">
-              Flight Deck helps any organization navigate the private jet
-              process and provide best-in-class charter services to customers
-              and stakeholders. Whether your business uses private flights
-              internally for employees or books flights on behalf of customers,
-              Flight Deck can improve the process.
+              Whether your business uses private flights internally for
+              employees and stakeholders or books flights on behalf of
+              customers, evoJets can improve the process.
             </p>
             <p className="text-base text-para-color leading-normal font-medium">
               <Link href="#" className="text-primary-color underline">
                 {" "}
                 Contact us
               </Link>{" "}
-              to discuss your integration and what kind of account setup will
-              best suit your needs.
+              to discuss your integration and what kind of account setup will best suit your needs.
             </p>
             <div className="banenr-btns pt-6 flex gap-5">
               <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">

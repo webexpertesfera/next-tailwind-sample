@@ -18,17 +18,18 @@ export const BuiltFlight = () => {
           </div>
           <div>
             <p className="text-base text-white leading-normal mb-5">
-              Flight Deck was built in partnership with{" "}
+              After years of developing our software internally on the evoJets
+              website and mobile app, we launched our Tech Services platform to
+              share these resources with industry partners.
+            </p>
+            <p className="text-base text-white leading-normal mb-5 ">
+              With our proven technology handling your inbound flight requests
+              and the{" "}
               <Link className="text-link-color underline" href="#">
                 evoJets,{" "}
               </Link>{" "}
-              a leader in on-demand charter and pioneer in private flight lead
-              generation, qualification, and conversion.
-            </p>
-            <p className="text-base text-white leading-normal mb-5 ">
-              With Flight Deck’s proven technology facilitating your trip
-              requests and evoJets there for fulfillment, converting users to
-              flyers is seamless and hassle-free.
+              team there for fulfillment, converting users to flyers is seamless
+              and hassle-free.
             </p>
           </div>
         </div>
@@ -37,7 +38,7 @@ export const BuiltFlight = () => {
             <div className="flex flex-col">
               <div className="pb-3 lg:pr-3 lg:border-r lg:border-bg-main lg:border-b border-bg-main">
                 <h6 className="text-white bg-bg-main rounded-xl text-center px-3 py-3 text-sm ">
-                  Your website/app
+                Your Website/App
                 </h6>
               </div>
               <div className="lg:border-r lg:border-bg-main lg:pt-3 lg:pr-3 ">
@@ -55,23 +56,23 @@ export const BuiltFlight = () => {
                 </h6>
               </div>
               <div className="lg:border-r lg:border-bg-main lg:pt-3 ">
-                <div className="grid gap-2 grid-cols-2 lg:px-3  pb-3 lg:border-b border-bg-main">
+                <div className="grid gap-2 grid-cols-1 lg:px-3  pb-3 lg:border-b border-bg-main">
                   <p className="text-white  min-h-api text-sm  text-center rounded-xl px-3 py-3 bg-para-color">
-                    Flight pricing
+                    Flight pricing &   Aircraft data
                   </p>
-                  <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
-                    Aircraft data
-                  </p>
+                  {/* <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
+                  
+                  </p> */}
                 </div>
               </div>
               <div className="lg:border-r lg:border-bg-main lg:pt-3 ">
-                <div className="grid gap-2 grid-cols-2 lg:px-3">
+                <div className="grid gap-2 grid-cols-1 lg:px-3">
                   <p className="text-white  min-h-api text-sm  text-center rounded-xl px-3 py-3 bg-para-color">
-                    Booking requests
+                    Booking requests  &  User validation
                   </p>
-                  <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
+                  {/* <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
                     User validation
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -84,23 +85,23 @@ export const BuiltFlight = () => {
                 </h6>
               </div>
               <div className="lg:border-r lg:border-bg-main lg:pt-3 ">
-                <div className="grid gap-2 grid-cols-2 lg:px-3  pb-3 lg:border-b border-bg-main">
+                <div className="grid gap-2 grid-cols-1 lg:px-3  pb-3 lg:border-b border-bg-main">
                   <p className="text-white  min-h-api text-sm  text-center rounded-xl px-3 py-3 bg-para-color">
-                    Trip monitoring
+                    Trip monitoring  & management
                   </p>
-                  <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
+                  {/* <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
                     Management
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="lg:border-r lg:border-bg-main lg:pt-3 ">
-                <div className="grid gap-2 grid-cols-2 lg:px-3">
+                <div className="grid gap-2 grid-cols-1 lg:px-3">
                   <p className="text-white  min-h-api text-sm  text-center rounded-xl px-3 py-3 bg-para-color">
-                    User insights
+                    User insights &  Charter sales tools
                   </p>
-                  <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
+                  {/* <p className="text-white  min-h-api text-sm text-center rounded-xl px-3 py-3 bg-para-color">
                     Charter sales tools
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -150,7 +151,7 @@ export const BuiltFlight = () => {
                   <p className="text-white text-sm text-center rounded-xl px-3 py-3 bg-para-color">
                     Payments
                   </p>
-             
+
                   <p className="text-white text-sm  text-center rounded-xl px-3 py-3 bg-para-color">
                     Flight following
                   </p>

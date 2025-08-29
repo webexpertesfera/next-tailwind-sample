@@ -17,7 +17,7 @@ export const Utilization = () => {
           Utilization
         </p>
         <h2 className="text-3xl text-title-color lg:text-center xl:text-5xl my-5 lg:mb-16 font-semibold">
-          Lorem Ipsum Dolor Sit Amet
+          Make the most of your charter flight demand
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           <div className="lg:pe-24">
@@ -25,60 +25,53 @@ export const Utilization = () => {
               Flight Deck API
             </h2>
             <p className="text-base font-medium text-para-color leading-normal mb-5">
-              Create an instant quoting machine on your website or app, with all
-              user data and flight requests stored and accessible in real-time. 
-              Serve your customers and stakeholders better with embedded charter
-              solutions through your brand. Tailor the aircraft, airports, and
-              pricing to fit your fleet and service area with a fully
-              white-labeled workflow.
+              Serve your customers and stakeholders with digital charter booking
+              services on your website or app. Tailor the available airports,
+              aircraft, and pricing to suit your location. Let your staff focus
+              on their day-to-day and offer your customers instant booking
+              solutions with a trusted partner in evoJets.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore API
             </button>
           </div>
           <div className="text-center">
-         
             <div className="lottie-chart">
-                <Lottie
-                  animationData={flight}
-                  loop={true}
-                  className="w-full lg:ml-auto"
-                  autoplay={true}
-                  rendererSettings={{
-                    preserveAspectRatio: "xMidYMid slice",
-                  }}
-                />{" "}
-              </div>
+              <Lottie
+                animationData={flight}
+                loop={true}
+                className="w-full lg:ml-auto"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-5 mt-5  lg:mt-10 grid-cols-1 flex flex-col-reverse  items-center pt-8 lg:pt-12">
           <div className="text-center">
-         
-            
             <div className="lottie-chart">
-                <Lottie
-                  animationData={hq}
-                  loop={true}
-                  className="w-full"
-                  autoplay={true}
-                  rendererSettings={{
-                    preserveAspectRatio: "xMidYMid slice",
-                  }}
-                />{" "}
-              </div>
+              <Lottie
+                animationData={hq}
+                loop={true}
+                className="w-full"
+                autoplay={true}
+                rendererSettings={{
+                  preserveAspectRatio: "xMidYMid slice",
+                }}
+              />{" "}
+            </div>
           </div>
           <div className="lg:pl-24">
             <h2 className="text-2xl text-title-color lg:text-3xl font-semibold mb-8">
-              Flight Deck HQ
+              Fight Deck HQ
             </h2>
             <p className="text-base font-medium text-para-color leading-normal mb-5">
               Don’t overburden your team with sourcing, quoting, contracts,
               payments, and mechanical recovery - let evoJets handle the charter
-              hassle. View your API flight requests on HQ and monitor status
-              with your dedicated evoJets rep. Track API activity and user
-              behavior with dashboard metrics. Run the cost calculator to view
-              instant price estimates and submit manual trip requests directly
-              to evoJets.
+              hassle. Track all your API activity and monitor flight progress.
+              Submit manual trip requests directly to evoJets.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Explore HQ

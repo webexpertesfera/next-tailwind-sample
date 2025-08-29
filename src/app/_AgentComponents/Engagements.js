@@ -20,9 +20,9 @@ export const Engagements = () => {
             </h2>
 
             <p className="text-base text-para-color leading-normal font-medium mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud.
+              Our goal is to tailor the perfect arrangement for your business.
+              No two integrations are the same, and we are flexible with our
+              terms and conditions.
             </p>
             <button className="text-primary-color font-semibold text-sm 2xl:text-base px-1 py-2 border-b border-slate-300">
               Engagement Overview
@@ -55,10 +55,11 @@ export const Engagements = () => {
               <Image src={check} className="me-2 h-8 w-8" alt="" />
               <div>
                 <h6 className="text-lg text-title-color font-semibold">
-                Client discounts
+                  Client discounts
                 </h6>
                 <p className="text-base  font-medium text-para-color">
-                Offer discounts and credits to clients, absorbed 100% by evoJets.
+                  Offer discounts and credits to clients, absorbed 100% by
+                  evoJets.
                 </p>
               </div>
             </div>

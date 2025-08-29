@@ -24,9 +24,9 @@ export const Dedicated = () => {
                   Dedicated evoJets reps
                 </h4>
                 <p className="text-sm text-para-color leading-normal mb-5 lg:w-4/5">
-                  Aliquet enim tortor at auctor urna nunc id cursus metus
-                  aliquam eleifend mi in nulla posuere sollicitudin aliquam
-                  ultrices.
+                  A single point-of-contact for all your flights. Stay
+                  completely in the loop or silence all alerts, the choice is
+                  yours.
                 </p>
               </div>
             </div>
@@ -41,9 +41,8 @@ export const Dedicated = () => {
                   Multi-level access
                 </h4>
                 <p className="text-sm text-para-color leading-normal mb-5 lg:w-4/5">
-                  Aliquet enim tortor at auctor urna nunc id cursus metus
-                  aliquam eleifend mi in nulla posuere sollicitudin aliquam
-                  ultrices.
+                  Assign admin and lower level permissions to unlimited users.
+                  Maintain visibility and security across your team.
                 </p>
               </div>
             </div>
@@ -58,9 +57,8 @@ export const Dedicated = () => {
                   Versatile solutions
                 </h4>
                 <p className="text-sm text-para-color leading-normal mb-5 lg:w-4/5">
-                  Aliquet enim tortor at auctor urna nunc id cursus metus
-                  aliquam eleifend mi in nulla posuere sollicitudin aliquam
-                  ultrices.
+                  HQ handles your API flight requests, provides tools to your
+                  team, and lets you submit manual flight requests to Evo.
                 </p>
               </div>
             </div>
@@ -75,9 +73,8 @@ export const Dedicated = () => {
                   Custom engagements
                 </h4>
                 <p className="text-sm text-para-color leading-normal mb-5 lg:w-4/5">
-                  Aliquet enim tortor at auctor urna nunc id cursus metus
-                  aliquam eleifend mi in nulla posuere sollicitudin aliquam
-                  ultrices.
+                  We work with companies to find the optimal engagement for
+                  their business, and are happy to get creative.
                 </p>
               </div>
             </div>

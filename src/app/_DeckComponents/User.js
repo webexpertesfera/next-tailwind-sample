@@ -15,16 +15,20 @@ export const User = () => {
               User Authentication
             </h2>
             <p className="text-base text-para-color leading-normal mb-8">
-              Request a JSON Web Token (JWT) with credentials provided in Flight
-              Deck. Use this token to authenticate requests to all Flight Deck
-              API endpoints.
+              Request a JSON Web Token (JWT) with credentials provided in
+              evoJets HQ. Use this token to authenticate requests to all API
+              endpoints.
             </p>
-            <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
+            {/* <button className="text-white text-base 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
               Get Started
-            </button>
+            </button> */}
           </div>
           <div className="lg:col-span-2 text-center mt-5 lg:mt-0">
-            <Image src={user} className="lg:w-3/4 w-full lg:ml-auto" alt="user" />
+            <Image
+              src={user}
+              className="lg:w-3/4 w-full lg:ml-auto"
+              alt="user"
+            />
           </div>
         </div>
       </div>

@@ -20,23 +20,26 @@ export default function RealEstateAndHospitality() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
             <div className="text-white lg:pr-10">
+              <p className="uppercase text-xs text-green-color border px-6 py-2 rounded-3xl border-cyan-800 mb-8 w-max font-semibold">
+                Real Estate & Hospitality
+              </p>
               <h2 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-8">
                 Back of house for your front of house
               </h2>
               <p className="text-base leading-normal">
-                If private flyers frequent your properties and your staff fields
-                charter requests, you need an embedded solution. Further engage
-                with guests and property owners on a pivotal part of their
-                experience with your brand - the journey to and from.
+                Integrate a full-service flight booking workflow on your website
+                or app, with evoJets there for fulfillment. With the resources
+                available at evoJets Tech Services, your private jet booking
+                possibilities are endless.
               </p>
               <div className="banenr-btns pt-10 flex gap-5">
                 <button className="text-white text-sm 2xl:text-base rounded-3xl bg-primary-color px-10 py-2">
-                  Get Started
+                  Contact Sales
                 </button>
               </div>
             </div>
             <div className=" text-end">
-            <div className="lottie-chart">
+              <div className="lottie-chart">
                 <Lottie
                   animationData={real}
                   loop={true}
