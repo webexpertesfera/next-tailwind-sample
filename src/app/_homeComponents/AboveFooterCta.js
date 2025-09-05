@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export const AboveFooterCta = () => {
   return (  
-    <section className="relative z-20 mb-20">
+    <section className="relative z-20 md:mx-[30px] 2xl:mx-auto mb-20">
       <div className="container mx-auto">
         <div className="text-center  mx-10 lg:mx-0 bg-second-color bg-cover bg-left-top text-white rounded-3xl relative">
         <div className="lottie-chart mx-auto hidden md:block rounded-lg md:top-3 lg:top-2 left-0 right-0 absolute md:w-[96%] lg:w-[98%] h-full pb-4">
